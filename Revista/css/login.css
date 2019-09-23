@@ -1,0 +1,47 @@
+#login{
+  margin: auto;
+  width: 500px;
+  background-color: #cacaca;
+  border-radius: 7px;
+  padding: 16px;
+}
+
+.logo{
+  display: block;
+  margin: auto;    
+  width: 80px;
+  height: 70px;
+}
+.button{  
+  border-radius: 8px; 
+  background-color: #2150ac;   
+}
+.button:hover{
+    background-color: #d1bb29;
+}
+section{
+  margin: auto;
+  -webkit-background-size: cover;  
+  background-image: url("../imagenes/login.jpg");  
+  background-repeat: no-repeat; 
+}
+#categ{
+  line-height: 60px;
+  color: black;
+}
+#categ:hover{
+  background-color: #d1bb29;
+}
+.align-left{ 
+  height: 40px;
+  line-height: 40px;
+  background-color: white;  
+  font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+a{
+  color: black;
+}
+a:hover{
+  color: #efd41a;
+}
