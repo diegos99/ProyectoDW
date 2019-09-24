@@ -1,0 +1,74 @@
+body {
+  margin: auto;
+  -webkit-background-size: cover;
+  background-image: url("../imagenes/categorias.png");
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 70px;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #2150ac;
+}
+
+.button:hover {
+  background-color: #d1bb29;
+}
+
+#categ {
+  line-height: 60px;
+  color: black;
+}
+
+#categ:hover {
+  background-color: #d1bb29;
+}
+
+.align-left {
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #efd41a;
+}
+
+.reveal {
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+h4, p {
+  text-align: center;
+}
+
+.encabezado {
+  background-color: #181515;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+}
+
+.titulo {
+  text-align: left;
+  line-height: 50px;
+  margin-left: 10px;
+}
+
+.btn-crear {
+  margin-bottom: 1000px;
+}
+
+/*# sourceMappingURL=categorias.css.map */
