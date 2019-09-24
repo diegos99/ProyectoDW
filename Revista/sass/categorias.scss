@@ -1,3 +1,6 @@
+$hover-color: #d1bb29;
+$button-color: #2150ac;
+$nav-color: black;
 body{
     margin: auto;
   -webkit-background-size: cover;  
@@ -12,17 +15,17 @@ body{
   }
   .button{  
     border-radius: 8px; 
-    background-color: #2150ac;   
+    background-color: $button-color;   
   }
   .button:hover{
-      background-color: #d1bb29;
+      background-color: $hover-color;
   }
   #categ{
     line-height: 60px;
-    color: black;
+    color: $nav-color;
   }
   #categ:hover{
-    background-color: #d1bb29;
+    background-color: $hover-color;
   }
   .align-left{ 
     height: 40px;
