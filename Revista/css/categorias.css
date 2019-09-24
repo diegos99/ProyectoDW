@@ -56,7 +56,8 @@ h4, p {
 
 .encabezado {
   background-color: #181515;
-  height: 50px;
+  height: 60px;
+  width: 800px;
   color: white;
   border-radius: 5px;
 }
@@ -69,6 +70,11 @@ h4, p {
 
 .btn-crear {
   margin-bottom: 1000px;
+}
+
+.tabla {
+  width: 800px;
+  height: auto;
 }
 
 /*# sourceMappingURL=categorias.css.map */
