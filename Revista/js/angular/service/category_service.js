@@ -16,5 +16,19 @@ angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$win
             });
         }
 
+        factory.createCategoria = function (data, callback) {
+            var req = {
+                method: 'POST',
+                url: 'http://localhost/revista_unis/api/categoria/create.php',
+                header: {
+                    'Content-Type': 'application/json'
+                },
+                data: data
+            };
+            $http(req).success(function (response) {
+                callback(response);
+            });
+        }
+
         return factory;
 }]);

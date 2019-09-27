@@ -82,14 +82,7 @@
             </tbody>
           </table> 
         </div>
-      </div>
-      <div class="row"> 
-        <div class="large-7 columns">
-            <button class="button success" data-open="crear-cat">
-                <i class="fi-plus"> Crear categoria</i>
-              </button>
-        </div>          
-      </div>                      
+      </div>                  
       
     </section>
 
@@ -131,38 +124,35 @@
       </div>       
       
     </div>    
-    <div class="reveal" id="crear-cat" data-reveal>      
-            <h4 class="text-center">Crear nueva categoría</h4>
-            <hr>
-            <p>
-              Llene los siguientes campos para crear una nueva categoría
-            </p>      
-                  <div class="large-12 columns">
-                    <form>        
-                      <label>Nombre de la categoría
-                          <input type="text" placeholder="Categoria">
-                      </label>
-                      <label>Tipos de acceso
-                          <select>                        
-                              <option value="premium">Premium</option>
-                              <option value="gratuito">Gratuito</option>                        
-                          </select>
-                      </label>                
-                      <p>
-                          <input type="submit" class="button expanded success" value="Insertar"></input>
-                      </p>                                
-                      </form> 
-                      <br />                                         
-                  </div>
-            <button
-              class="close-button"
-              data-close
-              aria-label="Close modal"
-              type="button"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>      
+    <div class="reveal-modal" id="crear-cat" data-reveal role="dialog">  
+      <div class="row">
+          <div class="large-12 columns">    
+              <h4 class="text-center">Crear nueva categoría</h4>
+              <hr>
+              <p>
+                Llene los siguientes campos para crear una nueva categoría
+              </p>      
+                    <div class="large-12 columns">
+                      <form>        
+                        <label>Nombre de la categoría
+                            <input ng-model="createName" type="text" placeholder="Categoria">
+                        </label>
+                        <label>Subscripcion
+                            <select ng-model="createIdS">      
+                                <option value="" disabled selected>Selecciona un tipo de subscripcion</option>                  
+                                <option ng-repeat="subscripcion in subscripciones" value="{{subscripcion.id_s}}">{{subscripcion.nombre}}</option>                      
+                            </select>
+                        </label>                
+                        <p>
+                            <button ng-click="createCategory();" class="button expanded success">Agregar</button>
+                        </p>                                
+                        </form> 
+                        <br />                                         
+                    </div>    
+            </div>
+      </div>
     </div>
+
     <div class="reveal" id="del-cat" data-reveal>      
             <h4 class="text-center">Eliminar categoría</h4>
             <hr>
