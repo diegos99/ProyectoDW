@@ -30,5 +30,19 @@ angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$win
             });
         }
 
+        factory.deleteCategoria = function (data, callback) {
+            var req = {
+                method: 'POST',
+                url: 'http://localhost/revista_unis/api/categoria/delete.php',
+                header: {
+                    'Content-Type': 'application/json'
+                },
+                data: data
+            };
+            $http(req).success(function (response) {
+                callback(response);
+            });
+        }
+
         return factory;
 }]);

@@ -17,23 +17,35 @@ angular.module('revista').controller('CategoryController', ['$scope', 'CategoryS
         }
 
         $scope.createCategory = function() {
-            console.log("Hola");
             var toCreate = {
                 nombre: $scope.createName,
                 id_s: $scope.createIdS
             };
 
-            console.log(toCreate);
             CategoryService.createCategoria(toCreate, function (response) {
-                console.log(response);
                 getCategorias();
                 $scope.createName = null;
                 $scope.createIdS = null;
             });
         }
 
+        $scope.setCategoriaToDelete = function (categoria) {
+            $scope.categoriaToDelete = categoria;
+        }
+
+        $scope.deleteCategory = function() {
+            var toDelete = {
+                id: $scope.categoriaToDelete.id_c
+            };
+
+            CategoryService.deleteCategoria(toDelete, function (response) {
+                getCategorias();
+            });
+        }
+
         getCategorias();
         getSubscripciones();
+        $(document).foundation();
 
     }
 ]);
