@@ -43,4 +43,8 @@ img {
   height: 160px;
 }
 
-/*# sourceMappingURL=app.css.map */
+.top-bar, .top-bar ul {
+  background-color: rgba(255, 255, 0, 0.774);
+}
+
+/*# sourceMappingURL=app2.css.map */

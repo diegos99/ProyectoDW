@@ -1,0 +1,41 @@
+.logo{
+    display: block;
+    margin: auto;    
+    width: 80px;
+    height: 70px;
+  }
+  .button{  
+    border-radius: 8px; 
+    background-color: #2150ac;   
+  }
+  .button:hover{
+      background-color: #d1bb29;
+  }
+  #categ{
+    line-height: 60px;
+    color: black;
+  }
+  #categ:hover, #categ:focus{
+    background-color: #d1bb29;    
+  }
+  .align-left{ 
+    height: 40px;
+    line-height: 40px;
+    background-color: white;  
+    font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  }
+  a{
+    color: black;
+}
+a:hover, a:focus{
+    color: #d1bb29;
+}
+
+img{
+  width: 300px;
+  height: 160px;
+}
+
+.top-bar, .top-bar ul{
+background-color: rgba(255, 255, 0, 0.774);
+}
