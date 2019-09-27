@@ -59,7 +59,14 @@
             <h4>Información personal</h4>
             <br />
             <div class="profile-userpic">
-              <img src="../imagenes/perfil.jpg" alt="foto de perfil" />
+              <label for="exampleFileUpload" class="button boton-foto-perfil">                
+                  <img src="../imagenes/perfil.jpg" src="name=archivo" alt="foto de perfil" />
+              </label>
+              <input type="file" id="exampleFileUpload" class="show-for-sr">                
+              <!-- <form action="action" method="post" enctype="multipart/form-data">
+                <input type="file" name="archivo" /><br />
+                <input type="submit" value="Subir" name="subir" />
+                </form> -->
             </div>
             <div class="profile-usertitle-name">
               Juan Diego Vega Ruiz
@@ -67,9 +74,9 @@
             <div class="profile-usertitle-type">
               Administrador
             </div>
-
             <p>Email: <i>diego@hotmail.com</i></p>
             <p>Pais: <i>Guatemala</i></p>
+            <p>Género: <i>Masculino</i></p>
           </div>
           <br>
           <div class="profile-userbuttons">
