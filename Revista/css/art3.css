@@ -1,0 +1,110 @@
+.logo {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 70px;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #2150ac;
+}
+
+.button:hover {
+  background-color: #d1bb29;
+}
+
+#categ {
+  line-height: 60px;
+  color: black;
+}
+
+#categ:hover, #categ:focus {
+  background-color: #d1bb29;
+}
+
+a {
+  color: black;
+}
+
+a:hover, a:focus {
+  color: #d1bb29;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 700px;
+  height: 300px;
+  margin: auto;
+  display: block;
+  align-content: center;
+}
+
+.cita {
+  max-width: 100%;
+  position: relative;
+}
+
+.lateral {
+  float: left;
+  max-width: 350px;
+  padding: 0 8px 8px 0;
+}
+
+.lateral .comillas {
+  font-size: 100px;
+  color: #8a8a8a;
+  line-height: 8px;
+}
+
+.lateral .informacion {
+  border-radius: 5px;
+}
+
+.lateral .informacion p {
+  font-weight: 300;
+}
+
+.lateral .info-pefil {
+  margin-bottom: 24px;
+}
+
+.lateral .info-pefil .foto-perfil img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 16px;
+}
+
+.lateral .info-pefil p {
+  position: relative;
+  top: 5px;
+}
+
+.lateral .info-pefil p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.lateral .info-pefil p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+@media screen and (max-width: 1023px) {
+  .lateral {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: auto;
+    align-content: center;
+  }
+}
+
+/*# sourceMappingURL=art3.css.map */
