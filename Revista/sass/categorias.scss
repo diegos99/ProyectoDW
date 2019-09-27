@@ -1,12 +1,6 @@
-$hover-color: #d1bb29;
+$primary-color: black;
+$secondary-color: #d1bb29;
 $button-color: #2150ac;
-$nav-color: black;
-body{
-    margin: auto;
-  -webkit-background-size: cover;  
-  background-image: url("../imagenes/categorias.png");  
-  background-repeat: no-repeat;
-}
 .logo{
     display: block;
     margin: auto;    
@@ -18,14 +12,14 @@ body{
     background-color: $button-color;   
   }
   .button:hover{
-      background-color: $hover-color;
+      background-color: $secondary-color;
   }
   #categ{
     line-height: 60px;
-    color: $nav-color;
+    color: $primary-color;
   }
   #categ:hover{
-    background-color: $hover-color;
+    background-color: $secondary-color;
   }
   .align-left{ 
     height: 40px;
@@ -34,34 +28,27 @@ body{
     font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   }
   a{
-    color: black;
+    color: $primary-color;
   }
   a:hover{
-    color: #efd41a;
+    color: $secondary-color;
   }
 .reveal{        
-    margin-left: 400px;
-    margin-top: 20px;
+    //margin-left: 400px;
+    //margin-top: 20px;
 }
 h4, p{
     text-align: center;
 }
 .encabezado{
-    background-color: rgb(24, 21, 21);
-    height: 60px;    
-    width: 800px;     
-    color: white;
+    background-color: $secondary-color;// rgb(24, 21, 21);                
+    color: $primary-color;
     border-radius: 5px;
 }
 .titulo{
     text-align: left;
-    line-height: 50px;
-    margin-left: 10px;
+    line-height: 50px;    
 }
-.btn-crear{
-    margin-bottom: 1000px;
-}
-.tabla{
-	width: 800px;
-	height: auto;
+tr, td, th{
+    border: rgba(128, 128, 128, 0.226) solid 1px;
 }

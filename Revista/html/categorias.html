@@ -66,40 +66,27 @@
       <br />
       <br />
       <br />
-      <table class="row tabla">
-            <div class="row encabezado">
-                <h4 class="titulo">Categorías</h4>
-            </div>   
-        <thead>                                                              
-          <tr>
-            <th>Id Categoría</th>
-            <th>Nombre de la categoría</th>
-            <th>Tipo de acceso</th>
-            <th>Acciones</th>            
-          </tr>
-        </thead>        
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>
-              Categoria 1
-            </td>
-            <td>Premium</td>
-            <td> 
-                <button class="button warning" data-open="editar-cat">
-                    <i class="fi-pencil"></i>
-                </button>
-                <button class="button alert" data-open="del-cat">
-                    <i class="fi-trash"></i>
-                </button>
-            </td>
-          </tr>
-          <tr>
-                <td>2</td>
+      <div class="row">
+        <div class="large-12 columns">
+            <table>
+                <div class="large-12 columns encabezado">
+                    <h4 class="titulo">Categorías</h4>
+                </div>   
+            <thead>                                                              
+              <tr>
+                <th>Id Categoría</th>
+                <th>Nombre de la categoría</th>
+                <th>Tipo de acceso</th>
+                <th>Acciones</th>            
+              </tr>
+            </thead>        
+            <tbody>
+              <tr>
+                <td>1</td>
                 <td>
-                  Categoria 2
+                  Categoria 1
                 </td>
-                <td>Gratuito</td>
+                <td>Premium</td>
                 <td> 
                     <button class="button warning" data-open="editar-cat">
                         <i class="fi-pencil"></i>
@@ -109,12 +96,12 @@
                     </button>
                 </td>
               </tr>
-            <tr>
-                <td>3</td>
+              <tr>
+                    <td>2</td>
                     <td>
-                      Categoria 3
+                      Categoria 2
                     </td>
-                    <td>Premium</td>
+                    <td>Gratuito</td>
                     <td> 
                         <button class="button warning" data-open="editar-cat">
                             <i class="fi-pencil"></i>
@@ -123,50 +110,73 @@
                             <i class="fi-trash"></i>
                         </button>
                     </td>
-            </tr>
-        </tbody>
-      </table>   
-      <p>
+                  </tr>
+                <tr>
+                    <td>3</td>
+                        <td>
+                          Categoria 3
+                        </td>
+                        <td>Premium</td>
+                        <td> 
+                            <button class="button warning" data-open="editar-cat">
+                                <i class="fi-pencil"></i>
+                            </button>
+                            <button class="button alert" data-open="del-cat">
+                                <i class="fi-trash"></i>
+                            </button>
+                        </td>
+                </tr>
+            </tbody>
+          </table> 
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="large-7 columns">
             <button class="button success" data-open="crear-cat">
                 <i class="fi-plus"> Crear nuevo articulo</i>
-            </button>
-        </p>                            
+              </button>
+        </div>          
+      </div>                      
+      
     </section>
 
-    <div class="reveal" id="editar-cat" data-reveal>      
-      <h4 class="text-center">Editor de categoría</h4>
-      <hr>
-      <p>
-        Llene los siguientes campos para editar la categoría seleccionada
-      </p>      
-            <div class="large-12 columns">
-              <form>                
-                <label>ID Categoría
-                    <input type="number" placeholder="000">
-                </label>
-                <label>Nombre de la categoría
-                    <input type="text" placeholder="Categoria">
-                </label>
-                <label>Tipos de acceso
-                    <select>                        
-                        <option value="premium">Premium</option>
-                        <option value="gratuito">Gratuito</option>                        
-                    </select>
-                </label>                
-                <p>
-                    <input type="submit" class="button expanded warning" value="Actualizar"></input>
-                </p>                                
-                </form> 
-                <br />                                         
-            </div>
-      <button
-        class="close-button"
-        data-close
-        aria-label="Close modal"
-        type="button"
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>      
+    <div class="reveal row" id="editar-cat" data-reveal>    
+      <div class="large-12 columns">
+          <h4 class="text-center">Editor de categoría</h4>
+          <hr>
+          <p>
+            Llene los siguientes campos para editar la categoría seleccionada
+          </p>      
+                <div class="large-12 columns">
+                  <form>                
+                    <label>ID Categoría
+                        <input type="number" placeholder="000">
+                    </label>
+                    <label>Nombre de la categoría
+                        <input type="text" placeholder="Categoria">
+                    </label>
+                    <label>Tipos de acceso
+                        <select>                        
+                            <option value="premium">Premium</option>
+                            <option value="gratuito">Gratuito</option>                        
+                        </select>
+                    </label>                
+                    <p>
+                        <input type="submit" class="button expanded warning" value="Actualizar"></input>
+                    </p>                                
+                    </form> 
+                    <br />                                         
+                </div>
+          <button
+            class="close-button"
+            data-close
+            aria-label="Close modal"
+            type="button"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>      
+      </div>       
+      
     </div>    
     <div class="reveal" id="crear-cat" data-reveal>      
             <h4 class="text-center">Crear nueva categoría</h4>
