@@ -1,0 +1,126 @@
+.logo{
+    display: block;
+    margin: auto;    
+    width: 80px;
+    height: 70px;
+  }
+  .button{  
+    border-radius: 8px; 
+    background-color: #2150ac;   
+  }
+  .button:hover{
+      background-color: #d1bb29;
+  }
+  #categ{
+    line-height: 60px;
+    color: black;
+  }
+  #categ:hover, #categ:focus{
+    background-color: #d1bb29;    
+  }
+  a{
+    color: black;
+}
+a:hover, a:focus{
+    color: #d1bb29;
+}
+
+$redes-btn-size: 50px;
+$redes-btn-border-width: 2px;
+$redes-btn-font-size: 25px;
+$redes-btn-line-height: 32px;
+$redes-btn-border-radius: 27px;
+$redes-btn-transition: all 0.5s ease;
+$redes-btn-margin: 12px;
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$pinterest-color: #cb2027;
+
+@mixin redes-btn($color-marca, $brand-icon) {
+  background: $color-marca;
+
+  &:before {
+    font-family: "FontAwesome";
+    content: $brand-icon;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-marca;
+    background: white;
+    border-color: $color-marca;
+  }
+}
+
+.article-container {
+  margin-top: 24px;
+
+  .article-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    
+  }
+
+  .titulo {
+    margin-top: 16px;
+
+    .titulo {
+      color: black;
+      font-weight: 600;
+    }
+  }
+
+  .portada {
+    margin-top: 24px;    
+    width: 100%;
+    height: 0.1;    
+  }
+
+  .contenido {
+    margin-top: 32px;
+
+    .redes {
+      .redes-btn-curvo {
+        text-align: center;
+
+        .redes-btn {
+          display: block;
+          position: relative;          
+          width: $redes-btn-size;
+          height: $redes-btn-size;
+          border: $redes-btn-border-width solid transparent;
+          text-align: center;
+          color: white;
+          font-size: $redes-btn-font-size;          
+          line-height: $redes-btn-line-height;
+          border-radius: $redes-btn-border-radius;
+          transition: $redes-btn-transition;
+          margin-right: $redes-btn-margin;
+          margin-bottom: $redes-btn-margin;
+
+          &:hover,
+          &:focus {
+            transform: rotate(360deg);
+          }
+
+          &.facebook {
+            @include redes-btn($facebook-color, "\f09a")
+          }
+
+          &.twitter {
+            @include redes-btn($twitter-color, "\f099")
+          }
+
+          &.pinterest {
+            @include redes-btn($pinterest-color, "\f0d2")
+          }
+        }
+      }
+    }
+
+    .contenido {
+      color: black;
+    }
+  }
+}

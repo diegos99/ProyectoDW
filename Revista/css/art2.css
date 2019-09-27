@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.logo {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 70px;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #2150ac;
+}
+
+.button:hover {
+  background-color: #d1bb29;
+}
+
+#categ {
+  line-height: 60px;
+  color: black;
+}
+
+#categ:hover, #categ:focus {
+  background-color: #d1bb29;
+}
+
+a {
+  color: black;
+}
+
+a:hover, a:focus {
+  color: #d1bb29;
+}
+
+.article-container {
+  margin-top: 24px;
+}
+.article-container .article-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.article-container .titulo {
+  margin-top: 16px;
+}
+.article-container .titulo .titulo {
+  color: black;
+  font-weight: 600;
+}
+.article-container .portada {
+  margin-top: 24px;
+  width: 100%;
+  height: 0.1;
+}
+.article-container .contenido {
+  margin-top: 32px;
+}
+.article-container .contenido .redes .redes-btn-curvo {
+  text-align: center;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  line-height: 32px;
+  border-radius: 27px;
+  transition: all 0.5s ease;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn:focus {
+  transform: rotate(360deg);
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook {
+  background: #3b5998;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook:focus {
+  color: #3b5998;
+  background: white;
+  border-color: #3b5998;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter {
+  background: #55acee;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter:focus {
+  color: #55acee;
+  background: white;
+  border-color: #55acee;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest {
+  background: #cb2027;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest:focus {
+  color: #cb2027;
+  background: white;
+  border-color: #cb2027;
+}
+.article-container .contenido .contenido {
+  color: black;
+}
+
+/*# sourceMappingURL=art2.css.map */
