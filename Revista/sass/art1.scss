@@ -1,0 +1,44 @@
+.logo{
+    display: block;
+    margin: auto;    
+    width: 80px;
+    height: 70px;
+  }
+  .button{  
+    border-radius: 8px; 
+    background-color: #2150ac;   
+  }
+  .button:hover{
+      background-color: #d1bb29;
+  }
+  #categ{
+    line-height: 60px;
+    color: black;
+  }
+  #categ:hover, #categ:focus{
+    background-color: #d1bb29;    
+  }
+  a{
+    color: black;
+}
+a:hover, a:focus{
+    color: #d1bb29;
+}
+.encabezado{
+    margin: auto;    
+    background: url("https://www.infobae.com/new-resizer/SLKfej7KEbCFR7-vHTLCQW8TPeI=/750x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/08/01122831/tendencias-recetas-destacada.jpg");    
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;    
+}
+h1{
+    line-height: 350px;  
+    color: white;  
+}
+img{
+    width: 800px;
+    height: 350px;
+}
+
