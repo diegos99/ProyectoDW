@@ -18,7 +18,7 @@
   #categ:hover, #categ:focus{
     background-color: #d1bb29;    
   }
-  .align-left{ 
+  footer, .align-left{ 
     height: 40px;
     line-height: 40px;
     background-color: white;  
@@ -36,6 +36,12 @@ img{
   height: 160px;
 }
 
-.top-bar, .top-bar ul{
+.top-bar{
 background-color: rgba(255, 255, 0, 0.774);
+}
+.top-bar ul{
+  background-color: rgba(255, 255, 0, 0.116);
+}
+body{
+  background-color: rgba(0, 0, 255, 0.63);
 }
