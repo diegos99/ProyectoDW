@@ -1,0 +1,209 @@
+
+    <header>
+        <div>
+          <div
+            class="title-bar"
+            data-responsive-toggle="responsive-menu"
+            data-hide-for="medium"
+          >
+            <button
+              class="menu-icon alert"
+              type="button"
+              data-toggle="responsive-menu"
+            ></button>
+            <div class="title-bar-title">Menu</div>
+          </div>
+  
+          <div class="top-bar" id="responsive-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">
+                  <img src="imagenes/logo.png" class="logo" />
+                </li>
+                <li><a href="#home" id="categ">Inicio</a></li>
+                <li>
+                  <a href="#categorias" id="categ">Categorias</a>
+                </li>
+                <li class="has-submenu">
+                  <a href="#subcategorias" id="categ">Sub Categorias</a>
+                </li>
+                <li><a href="#articulos" id="categ">Articulos</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+            <ul class="menu">            
+              <li>
+                  <a href="#perfil">                    
+                      <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="logo"/>
+                      <br>
+                      <strong>Diego Vega</strong>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  
+      <section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="row">
+          <div class="large-12 columns">
+              <table>
+                  <div class="large-12 columns encabezado">
+                      <h4 class="titulo">Sub Categorias</h4>
+                  </div>   
+              <thead>                                                              
+                <tr>
+                  <th>#</th>
+                  <th>Nombre de la sub categoria</th>
+                  <th>Categoria</th>
+                  <th>Acciones</th>            
+                </tr>
+              </thead>        
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    Categoria 1
+                  </td>
+                  <td>Arte</td>
+                  <td> 
+                      <button class="button warning" data-open="editar-cat">
+                          <i class="fi-pencil"></i>
+                      </button>
+                      <button class="button alert" data-open="del-cat">
+                          <i class="fi-trash"></i>
+                      </button>
+                  </td>
+                </tr>
+                <tr>
+                      <td>2</td>
+                      <td>
+                        Categoria 2
+                      </td>
+                      <td>Negocios</td>
+                      <td> 
+                          <button class="button warning" data-open="editar-cat">
+                              <i class="fi-pencil"></i>
+                          </button>
+                          <button class="button alert" data-open="del-cat">
+                              <i class="fi-trash"></i>
+                          </button>
+                      </td>
+                    </tr>
+                  <tr>
+                      <td>3</td>
+                          <td>
+                            Categoria 3
+                          </td>
+                          <td>Tecnologia</td>
+                          <td> 
+                              <button class="button warning" data-open="editar-cat">
+                                  <i class="fi-pencil"></i>
+                              </button>
+                              <button class="button alert" data-open="del-cat">
+                                  <i class="fi-trash"></i>
+                              </button>
+                          </td>
+                  </tr>
+              </tbody>
+            </table> 
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="large-7 columns">
+              <button class="button success" data-open="crear-cat">
+                  <i class="fi-plus"> Crear sub categoria</i>
+                </button>
+          </div>          
+        </div>                      
+        
+      </section>
+  
+      <div class="reveal row" id="editar-cat" data-reveal>    
+        <div class="large-12 columns">
+            <h4 class="text-center">Editor de categoría</h4>
+            <hr>
+            <p>
+              Llene los siguientes campos para editar la categoría seleccionada
+            </p>      
+                  <div class="large-12 columns">
+                    <form>                
+                      <label>ID Categoría
+                          <input type="number" placeholder="000">
+                      </label>
+                      <label>Nombre de la categoría
+                          <input type="text" placeholder="Categoria">
+                      </label>
+                      <label>Tipos de acceso
+                          <select>                        
+                              <option value="premium">Premium</option>
+                              <option value="gratuito">Gratuito</option>                        
+                          </select>
+                      </label>                
+                      <p>
+                          <input type="submit" class="button expanded warning" value="Actualizar"></input>
+                      </p>                                
+                      </form> 
+                      <br />                                         
+                  </div>
+            <button
+              class="close-button"
+              data-close
+              aria-label="Close modal"
+              type="button"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>      
+        </div>       
+        
+      </div>    
+      <div class="reveal" id="crear-cat" data-reveal>      
+              <h4 class="text-center">Crear nueva categoría</h4>
+              <hr>
+              <p>
+                Llene los siguientes campos para crear una nueva categoría
+              </p>      
+                    <div class="large-12 columns">
+                      <form>        
+                        <label>Nombre de la categoría
+                            <input type="text" placeholder="Categoria">
+                        </label>
+                        <label>Tipos de acceso
+                            <select>                        
+                                <option value="premium">Premium</option>
+                                <option value="gratuito">Gratuito</option>                        
+                            </select>
+                        </label>                
+                        <p>
+                            <input type="submit" class="button expanded success" value="Insertar"></input>
+                        </p>                                
+                        </form> 
+                        <br />                                         
+                    </div>
+              <button
+                class="close-button"
+                data-close
+                aria-label="Close modal"
+                type="button"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>      
+      </div>
+      <div class="reveal" id="del-cat" data-reveal>      
+              <h4 class="text-center">Eliminar categoría</h4>
+              <hr>
+              <p>
+                ¿Está seguro que desea eliminar esta categoría?
+              </p>      
+              <p>
+                  <button class="button" data-close aria-label="Close modal">Cancelar</button>
+                  <button class="button alert">Eliminar</button>                  
+              </p>                                
+      </div>    
+      <script>
+        $(document).foundation();
+      </script>
