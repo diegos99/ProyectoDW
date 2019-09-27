@@ -1,3 +1,97 @@
+#login {
+  margin: auto;
+  width: 500px;
+  background-color: #cacaca;
+  border-radius: 7px;
+  padding: 16px;
+}
 
+.logo {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 70px;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #2150ac;
+}
+
+.button:hover {
+  background-color: #d1bb29;
+}
+
+#categ {
+  line-height: 60px;
+  color: black;
+}
+
+#categ:hover {
+  background-color: #d1bb29;
+}
+
+.align-left {
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #efd41a;
+}
+
+.profile {
+  background-color: #cacaca;
+  border-radius: 10px;
+}
+
+.contenido {
+  margin: auto;
+}
+
+h4 {
+  text-align: center;
+}
+
+.profile-userpic img {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #2150ac;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-type {
+  text-transform: uppercase;
+  color: #cfb929;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+}
+
+.profile-userbuttons .button {
+  text-transform: uppercase;
+  font-size: 11px;
+}
 
 /*# sourceMappingURL=Usuario.css.map */

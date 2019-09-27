@@ -57,4 +57,10 @@ tr, td, th {
   border: rgba(128, 128, 128, 0.226) solid 1px;
 }
 
+img {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=categorias.css.map */

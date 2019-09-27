@@ -33,10 +33,7 @@ $button-color: #2150ac;
   a:hover{
     color: $secondary-color;
   }
-.reveal{        
-    //margin-left: 400px;
-    //margin-top: 20px;
-}
+
 h4, p{
     text-align: center;
 }
@@ -51,4 +48,9 @@ h4, p{
 }
 tr, td, th{
     border: rgba(128, 128, 128, 0.226) solid 1px;
+}
+img {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
 }
