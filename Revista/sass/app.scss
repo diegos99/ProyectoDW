@@ -1,38 +1,80 @@
-.logo{
-    display: block;
-    margin: auto;    
-    width: 80px;
-    height: 70px;
-  }
-  .button{  
-    border-radius: 8px; 
-    background-color: #2150ac;   
-  }
-  .button:hover{
-      background-color: #d1bb29;
-  }
-  #categ{
-    line-height: 60px;
-    color: black;
-  }
-  #categ:hover, #categ:focus{
-    background-color: #d1bb29;    
-  }
-  .align-left{ 
-    height: 40px;
-    line-height: 40px;
-    background-color: white;  
-    font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  }
-  a{
-    color: black;
-}
-a:hover, a:focus{
-    color: #d1bb29;
+$primary-color: #e68d10;
+$secondary-color: #555;
+$hover-button-color: #e68d10c9;
+
+.barra {
+  background-color: $primary-color;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;  
 }
 
-img{
+.logo-space {
+  display: table;
+  height: 250px;
+  .logo-container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .logo {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+}
+
+.top-bar {
+  background-color: $secondary-color;
+}
+.title-bar {
+  background-color: $primary-color;
+}
+.menu-container ul {
+  background-color: $secondary-color;
+}
+nav {
+  a {
+    color: white;
+  }
+  a:focus,
+  a:hover {
+    color: white;
+  }
+  .submenu a {
+    color: $secondary-color;
+  }
+  li:hover,
+  li:focus {
+    background-color: $primary-color;
+  }
+  .top-bar-right {
+    li:hover,
+    li:focus {
+      background-color: transparent;
+    }
+  }
+  .button {
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+  .button:hover {
+    background-color: $hover-button-color ;
+  }
+}
+
+footer{
+  background-color: $secondary-color;
+  height: 50px;
+  text-align: center;  
+  color: white;  
+  .texto{
+    line-height: 50px;    
+  }    
+}
+
+img {
   width: 300px;
   height: 160px;
 }
-

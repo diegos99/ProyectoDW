@@ -1,41 +1,72 @@
-.logo {
+.barra {
+  background-color: #e68d10;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+}
+.logo-space .logo-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.logo-space .logo {
   display: block;
   margin: auto;
-  width: 80px;
-  height: 70px;
+  width: auto;
+  height: auto;
 }
 
-.button {
+.top-bar {
+  background-color: #555;
+}
+
+.title-bar {
+  background-color: #e68d10;
+}
+
+.menu-container ul {
+  background-color: #555;
+}
+
+nav a {
+  color: white;
+}
+nav a:focus,
+nav a:hover {
+  color: white;
+}
+nav .submenu a {
+  color: #555;
+}
+nav li:hover,
+nav li:focus {
+  background-color: #e68d10;
+}
+nav .top-bar-right li:hover,
+nav .top-bar-right li:focus {
+  background-color: transparent;
+}
+nav .button {
   border-radius: 8px;
-  background-color: #2150ac;
+  background-color: #e68d10;
+}
+nav .button:hover {
+  background-color: #e68d10c9;
 }
 
-.button:hover {
-  background-color: #d1bb29;
+footer {
+  background-color: #555;
+  height: 50px;
+  text-align: center;
+  color: white;
 }
-
-#categ {
-  line-height: 60px;
-  color: black;
-}
-
-#categ:hover, #categ:focus {
-  background-color: #d1bb29;
-}
-
-.align-left {
-  height: 40px;
-  line-height: 40px;
-  background-color: white;
-  font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-}
-
-a {
-  color: black;
-}
-
-a:hover, a:focus {
-  color: #d1bb29;
+footer .texto {
+  line-height: 50px;
 }
 
 img {
