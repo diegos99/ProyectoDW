@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Articulo 2</title>
-    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
     <link
       rel="stylesheet"
       href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
@@ -14,48 +14,67 @@
     <link rel="stylesheet" href="../css/art2.css" />
   </head>
   <body>
-    <header>
-      <div
-        class="title-bar"
-        data-responsive-toggle="responsive-menu"
-        data-hide-for="medium"
-      >
-        <button
-          class="menu-icon"
-          type="button"
-          data-toggle="responsive-menu"
-        ></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-
-      <nav class="top-bar" id="responsive-menu">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">
+      <header>
+          <div class="barra">
+            <strong>
+              <i>"Llevando el mejor sabor a tu casa"</i>
+            </strong>
+          </div>
+    
+          <div class="row logo-space">
+            <div class="logo-container">
               <img src="../imagenes/logo.png" class="logo" />
-            </li>
-            <li><a href="../home.html" id="categ">Inicio</a></li>
-            <li><a href="#0" id="categ">Categoria 1</a></li>
-            <li class="has-submenu">
-              <a href="#0" id="categ">Categoria 2</a>
-              <ul class="submenu menu vertical" data-submenu>
-                <li><a href="#0">Sub cat 1</a></li>
-                <li><a href="#0">Sub cat 2</a></li>
-                <li><a href="#0">Sub cat 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#0" id="categ">Categoria 3</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search" /></li>
-            <li><button type="button" class="button">Search</button></li>
-            <li><a href="../html/login.html">Log In</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+            </div>
+          </div>
+    
+          <div
+            class="title-bar"
+            data-responsive-toggle="responsive-menu"
+            data-hide-for="medium"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="responsive-menu"
+            ></button>
+            <div class="title-bar-title">Menu</div>
+          </div>
+    
+          <nav class="top-bar" id="responsive-menu">
+            <div class="row">
+              <div class="top-bar-left menu-container">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li><a href="../home.html">Inicio</a></li>
+                  <li>
+                    <a href="#0">Categoria 1</a>
+                  </li>
+                  <li class="has-submenu">
+                    <a href="#0">Categoria2</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                      <li><a href="#0">Sub cat 1</a></li>
+                      <li><a href="#0">Sub cat 2</a></li>
+                      <li><a href="#0">Sub cat 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#0">Categoria 3</a></li>
+                </ul>
+              </div>
+              <div class="top-bar-right menu-container">
+                <ul class="menu">
+                  <li id="hola">
+                    <input type="search" class="menu" placeholder="Search" />
+                  </li>
+                  <li>
+                    <button type="button" class="button">
+                      <i class="fa-money">Search</i>
+                    </button>
+                  </li>
+                  <li><a href="../html/login.html">Log In</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
 
     <section>
       <div class="article-container">
@@ -247,12 +266,12 @@
     </section>
 
     <footer>
-      <div class="row">
-        <ul class="menu align-left">
-          <li class="menu-text">Copyright ©, Todos los derechos reservados.</li>
-        </ul>
-      </div>
-    </footer>
+        <div class="row">
+          <ul class="menu">
+            <li class="texto">Copyright © | Todos los derechos reservados.</li>
+          </ul>
+        </div>
+      </footer>
 
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>

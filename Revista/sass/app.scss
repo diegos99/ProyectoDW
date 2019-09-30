@@ -59,7 +59,8 @@ nav {
     border-radius: 8px;
     background-color: $primary-color;
   }
-  .button:hover {
+  .button:hover,
+  .button:focus {
     background-color: $hover-button-color ;
   }
 }

@@ -1,38 +1,83 @@
-$primary-color: black;
-$secondary-color: #d1bb29;
-$button-color: #2150ac;
-.logo{
+$primary-color: #e68d10;
+$secondary-color: #555;
+$hover-button-color: #e68d10c9;
+
+.barra {
+  background-color: $primary-color;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;  
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+  .logo-container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .logo {
     display: block;
-    margin: auto;    
-    width: 80px;
-    height: 70px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    border-radius: 0%;
   }
-  .button{  
-    border-radius: 8px; 
-    background-color: $button-color;   
+}
+
+.top-bar {  
+  background-color: $secondary-color;  
+}
+.title-bar {
+  background-color: $primary-color;  
+}
+.menu-container ul {
+  background-color: $secondary-color;  
+}
+nav {  
+  a {
+    color: white;
+    line-height: 60px !important;    
   }
-  .button:hover{
-      background-color: $secondary-color;
+  a:focus,
+  a:hover {
+    color: white;
   }
-  #categ{
-    line-height: 60px;
-    color: $primary-color;
-  }
-  #categ:hover{
-    background-color: $secondary-color;
-  }
-  .align-left{ 
-    height: 40px;
-    line-height: 40px;
-    background-color: white;  
-    font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  }
-  a{
-    color: $primary-color;
-  }
-  a:hover{
+  .submenu a {
     color: $secondary-color;
   }
+  li:hover,
+  li:focus {
+    background-color: $primary-color;
+  }
+  .top-bar-right {
+    li:hover,
+    li:focus {
+      background-color: transparent;
+    }
+  }
+  .button {
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: $hover-button-color ;
+  }
+}
+
+footer{
+  background-color: $secondary-color;
+  height: 50px;
+  text-align: center;  
+  color: white;  
+  .texto{
+    line-height: 50px;    
+  }    
+}
+
 
 h4, p{
     text-align: center;
@@ -50,7 +95,11 @@ tr, td, th{
     border: rgba(128, 128, 128, 0.226) solid 1px;
 }
 img {
-  width: 200px;
-  height: 180px;
+  width: 100px;
+  height: 70px;
   border-radius: 50%;
+}
+
+.top-bar-left{
+  margin-top: 25px;
 }

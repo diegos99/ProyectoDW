@@ -55,7 +55,8 @@ nav .button {
   border-radius: 8px;
   background-color: #e68d10;
 }
-nav .button:hover {
+nav .button:hover,
+nav .button:focus {
   background-color: #e68d10c9;
 }
 
