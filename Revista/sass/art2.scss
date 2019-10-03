@@ -109,7 +109,12 @@ $pinterest-color: #cb2027;
     height: 300px;
   }
 }
-
+.articulos{
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 
 .article-container {
@@ -168,7 +173,7 @@ $pinterest-color: #cb2027;
   display: inline-block;
   text-align: center;  
   img {
-    width: 10000px;
+    width: 1400px;
     height: 500px;
     filter: brightness(0.6);
   }
@@ -199,7 +204,7 @@ $pinterest-color: #cb2027;
 .detalles {
   a{
     color: white;
-    font-weight: 550;
+    font-weight: 50;
   }
   .autor {
     position: absolute;

@@ -76,6 +76,11 @@ footer .texto {
   height: 300px;
 }
 
+.articulos img {
+  max-width: 100%;
+  height: auto;
+}
+
 .article-container {
   margin-top: 24px;
 }
@@ -149,7 +154,7 @@ footer .texto {
   text-align: center;
 }
 .contenedor img {
-  width: 10000px;
+  width: 1400px;
   height: 500px;
   filter: brightness(0.6);
 }
@@ -179,7 +184,7 @@ footer .texto {
 
 .detalles a {
   color: white;
-  font-weight: 550;
+  font-weight: 50;
 }
 .detalles .autor {
   position: absolute;
