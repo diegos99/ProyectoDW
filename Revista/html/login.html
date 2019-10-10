@@ -1,51 +1,6 @@
 
-    <header>      
-          <div
-          class="title-bar"
-          data-responsive-toggle="responsive-menu"
-          data-hide-for="medium"
-          >
-          <button
-            class="menu-icon"
-            type="button"
-            data-toggle="responsive-menu"
-          ></button>
-          <div class="title-bar-title">Menu</div>
-        </div>
-
-        <div class="top-bar" id="responsive-menu" ng-controller="BarController">
-            <div class="top-bar-left">
-              <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">
-                  <img src="imagenes/logo.png" class="logo" />
-                </li>
-                <li><a href="#home" id="categ">Inicio</a></li>
-                <li>
-                  <a href="#categorias" id="categ">Categorias</a>
-                </li>
-                <li class="has-submenu">
-                  <a href="#subcategorias" id="categ">Sub Categorias</a>
-                </li>
-                <li><a href="#articulos" id="categ">Articulos</a></li>
-              </ul>
-            </div>
-            <div class="top-bar-right" ng-show="isLogged">
-            <ul class="menu">            
-              <li>
-                  <a href="#perfil">                    
-                      <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="logo"/>
-                      <br>
-                      <strong>{{user.nombre}} {{user.apellido}}</strong>
-                  </a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-bar-right" ng-show="!isLogged">
-              <ul class="menu">
-                <li><a href="#login">Log In</a></li>
-              </ul>
-            </div>
-        </div>   
+    <header> 
+        <div ng-include="'html/topbar.html'"></div>
     </header>
     <section>
         <br />
