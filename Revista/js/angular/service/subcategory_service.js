@@ -1,12 +1,13 @@
-angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$window',
-    function ($http, $cookies, $window) {
+angular.module('revista').factory('SubCategoryService', ['$http', 
+    function($http) {
+        var factory = {};
 
         var factory = {};
 
-        factory.getCategorias = function (callback) {
+        factory.getSubCategorias = function (callback) {
             var req = {
                 method: 'GET',
-                url: 'http://localhost/revista_unis/api/categoria/read.php',
+                url: 'http://localhost/revista_unis/api/subcategoria/read.php',
                 header: {
                     'Content-Type': 'application/json'
                 }
@@ -16,10 +17,10 @@ angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$win
             });
         }
 
-        factory.createCategoria = function (data, callback) {
+        factory.createSubCategoria = function (data, callback) {
             var req = {
                 method: 'POST',
-                url: 'http://localhost/revista_unis/api/categoria/create.php',
+                url: 'http://localhost/revista_unis/api/subcategoria/create.php',
                 header: {
                     'Content-Type': 'application/json'
                 },
@@ -30,10 +31,10 @@ angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$win
             });
         }
 
-        factory.deleteCategoria = function (data, callback) {
+        factory.deleteSubCategoria = function (data, callback) {
             var req = {
                 method: 'POST',
-                url: 'http://localhost/revista_unis/api/categoria/delete.php',
+                url: 'http://localhost/revista_unis/api/subcategoria/delete.php',
                 header: {
                     'Content-Type': 'application/json'
                 },
@@ -44,10 +45,10 @@ angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$win
             });
         }
 
-        factory.updateCategoria = function (data, callback) {
+        factory.updateSubCategoria = function (data, callback) {
             var req = {
                 method: 'POST',
-                url: 'http://localhost/revista_unis/api/categoria/update.php',
+                url: 'http://localhost/revista_unis/api/subcategoria/update.php',
                 header: {
                     'Content-Type': 'application/json'
                 },
@@ -60,4 +61,4 @@ angular.module('revista').factory('CategoryService', ['$http', '$cookies', '$win
     
 
         return factory;
-}]);
+    }])

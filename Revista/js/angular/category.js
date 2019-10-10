@@ -43,6 +43,21 @@ angular.module('revista').controller('CategoryController', ['$scope', 'CategoryS
             });
         }
 
+        $scope.setCategoryToUpdate = function(categoria) {
+            $scope.categoryToUpdate = categoria;
+        }
+
+        $scope.updateCategory = function () {
+            var toUpdate = {
+                id: $scope.categoryToUpdate.id_c,
+                nombre: $scope.categoryToUpdate.nombre,
+                id_s: $scope.categoryToUpdate.id_s
+            }
+            CategoryService.updateCategoria(toUpdate, function (response) {
+                getCategorias();
+            });
+        }
+
         getCategorias();
         getSubscripciones();
         $(document).foundation();

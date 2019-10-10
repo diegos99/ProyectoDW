@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/foundation.css" />
-    <link
-      rel="stylesheet"
-      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
-    />
-    <link rel="stylesheet" href="../css/login.css" />
-  </head>
 
-  <body>
     <header>      
           <div
           class="title-bar"
@@ -28,33 +13,39 @@
           <div class="title-bar-title">Menu</div>
         </div>
 
-        <nav class="top-bar" id="responsive-menu">
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text">                  
-                <img src="../imagenes/logo.png" class="logo">                
+        <div class="top-bar" id="responsive-menu" ng-controller="BarController">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">
+                  <img src="imagenes/logo.png" class="logo" />
+                </li>
+                <li><a href="#home" id="categ">Inicio</a></li>
+                <li>
+                  <a href="#categorias" id="categ">Categorias</a>
+                </li>
+                <li class="has-submenu">
+                  <a href="#subcategorias" id="categ">Sub Categorias</a>
+                </li>
+                <li><a href="#articulos" id="categ">Articulos</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right" ng-show="isLogged">
+            <ul class="menu">            
+              <li>
+                  <a href="#perfil">                    
+                      <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="logo"/>
+                      <br>
+                      <strong>{{user.nombre}} {{user.apellido}}</strong>
+                  </a>
               </li>
-              <li><a href="../home.html" id="categ">Inicio</a></li>
-              <li><a href="../html/categorias.html" id="categ">Categorias</a></li>
-              <li class="has-submenu">
-                <a href="#0" id="categ">Categoria 1</a>
-                <ul class="submenu menu vertical" data-submenu>
-                  <li><a href="#0">Sub cat 1</a></li>
-                  <li><a href="#0">Sub cat 2</a></li>
-                  <li><a href="#0">Sub cat 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#0" id="categ">Categoria 2</a></li>              
             </ul>
           </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              <li><input type="search" placeholder="Search" /></li>
-              <li><button type="button" class="button">Search</button></li>
-              <li><a href="../html/login.html">Log In</a></li>
-            </ul>
-          </div>
-        </nav>      
+          <div class="top-bar-right" ng-show="!isLogged">
+              <ul class="menu">
+                <li><a href="#login">Log In</a></li>
+              </ul>
+            </div>
+        </div>   
     </header>
     <section>
         <br />
@@ -67,19 +58,12 @@
           <form>
             <h4 class="text-center">Iniciar sesión</h4>
               <label>Email
-                <input type="email" placeholder="somebody@example.com">
+                <input type="email" placeholder="somebody@example.com" ng-model="correo">
               </label>
               <label>Password
-                <input type="password" placeholder="Password">
-              </label>
-              <input id="show-password" type="checkbox">
-                <label for="show-password">Mostrar contraseña</label>              
-                <a href="../html/Usuario.html">                  
-                  <input type="button" class="button expanded" value="Log in"></input>
-                </a>              
-              <p class="text-center">
-                <a href="#">Olvidaste tu contraseña?</a>
-              </p>
+                <input type="password" placeholder="Contraseña" ng-model="contrasena">
+              </label>         
+                <button ng-click="login()">Iniciar sesión</button>  
             </form> 
             <br />                                   
         </div>        
@@ -99,12 +83,3 @@
           
         </div>
       </footer>
-
-    <script src="../js/vendor/jquery.js"></script>
-    <script src="../js/vendor/what-input.js"></script>
-    <script src="../js/vendor/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>

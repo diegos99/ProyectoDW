@@ -14,7 +14,7 @@
           <div class="title-bar-title">Menu</div>
         </div>
 
-        <div class="top-bar" id="responsive-menu">
+        <div class="top-bar" id="responsive-menu" ng-controller="BarController">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text">
@@ -30,17 +30,22 @@
               <li><a href="#articulos" id="categ">Articulos</a></li>
             </ul>
           </div>
-          <div class="top-bar-right">
+          <div class="top-bar-right" ng-show="isLogged">
           <ul class="menu">            
             <li>
                 <a href="#perfil">                    
                     <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="logo"/>
                     <br>
-                    <strong>Diego Vega</strong>
+                    <strong>{{user.nombre}} {{user.apellido}}</strong>
                 </a>
             </li>
           </ul>
         </div>
+        <div class="top-bar-right" ng-show="!isLogged">
+            <ul class="menu">
+              <li><a href="#login">Log In</a></li>
+            </ul>
+          </div>
       </div>
     </header>
 
@@ -71,7 +76,7 @@
                 </td>
                 <td>{{categoria.nombre_subscripcion}}</td>
                 <td> 
-                    <button class="button warning" data-open="editar-cat">
+                    <button class="button warning" data-open="editar-cat" ng-click="setCategoryToUpdate(categoria);">
                         <i class="fi-pencil"></i>
                     </button>
                     <button class="button alert" data-open="del-cat" ng-click="setCategoriaToDelete(categoria);">
@@ -87,7 +92,7 @@
       <div class="row"> 
           <div class="large-7 columns">
               <button class="button success" data-open="crear-cat">
-                  <i class="fi-plus"> Crear nuevo articulo</i>
+                  <i class="fi-plus"> Crear categoria</i>
                 </button>
           </div>          
         </div>    
@@ -101,26 +106,23 @@
           <p>
             Llene los siguientes campos para editar la categoría seleccionada
           </p>      
-                <div class="large-12 columns">
-                  <form>                
-                    <label>ID Categoría
-                        <input type="number" placeholder="000">
-                    </label>
-                    <label>Nombre de la categoría
-                        <input type="text" placeholder="Categoria">
-                    </label>
-                    <label>Tipos de acceso
-                        <select>                        
-                            <option value="premium">Premium</option>
-                            <option value="gratuito">Gratuito</option>                        
-                        </select>
-                    </label>                
-                    <p>
-                        <input type="submit" class="button expanded warning" value="Actualizar"></input>
-                    </p>                                
-                    </form> 
-                    <br />                                         
-                </div>
+          <div class="large-12 columns">
+              <form>        
+                <label>Nombre de la categoría
+                    <input ng-model="categoryToUpdate.nombre" type="text" placeholder="Categoria">
+                </label>
+                <label>Subscripcion
+                    <select ng-model="categoryToUpdate.id_s">      
+                        <option value="" disabled selected>Selecciona un tipo de subscripcion</option>                  
+                        <option ng-repeat="subscripcion in subscripciones" value="{{subscripcion.id_s}}">{{subscripcion.nombre}}</option>                      
+                    </select>
+                </label>                
+                <p>
+                    <button data-close ng-click="updateCategory();" class="button expanded success">Actualizar</button>
+                </p>                                
+                </form> 
+                <br />                                         
+            </div>   
           <button
             class="close-button"
             data-close

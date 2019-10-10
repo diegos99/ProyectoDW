@@ -13,34 +13,39 @@
         <div class="title-bar-title">Menu</div>
       </div>
 
-      <nav class="top-bar" id="responsive-menu">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">
-              <img src="imagenes/logo.png" class="logo" />
-            </li>
-            <li><a href="#home" id="categ">Inicio</a></li>
-            <li>
-              <a href="#categorias" id="categ">Categorias</a>
-            </li>
-            <li class="has-submenu">
-              <a href="#subcategorias" id="categ">Sub Categorias</a>
-            </li>
-            <li><a href="#articulos" id="categ">Articulos</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
+      <div class="top-bar" id="responsive-menu" ng-controller="BarController">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">
+                <img src="imagenes/logo.png" class="logo" />
+              </li>
+              <li><a href="#home" id="categ">Inicio</a></li>
+              <li>
+                <a href="#categorias" id="categ">Categorias</a>
+              </li>
+              <li class="has-submenu">
+                <a href="#subcategorias" id="categ">Sub Categorias</a>
+              </li>
+              <li><a href="#articulos" id="categ">Articulos</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right" ng-show="isLogged">
           <ul class="menu">            
             <li>
                 <a href="#perfil">                    
                     <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="logo"/>
                     <br>
-                    <strong>Diego Vega</strong>
+                    <strong>{{user.nombre}} {{user.apellido}}</strong>
                 </a>
             </li>
           </ul>
-        </div>               
-      </nav>
+        </div>
+        <div class="top-bar-right" ng-show="!isLogged">
+            <ul class="menu">
+              <li><a href="#login">Log In</a></li>
+            </ul>
+          </div>
+      </div>
     </header>
     
     <section>
@@ -53,14 +58,10 @@
               <img src="imagenes/perfil.jpg" alt="foto de perfil" />
             </div>
             <div class="profile-usertitle-name">
-              Juan Diego Vega Ruiz
-            </div>
-            <div class="profile-usertitle-type">
-              Administrador
+              {{user.nombre}} {{user.apellido}}
             </div>
 
-            <p>Email: <i>diego@hotmail.com</i></p>
-            <p>Pais: <i>Guatemala</i></p>
+            <p>Email: <i>{{user.correo}}</i></p>
           </div>
           <div class="profile-userbuttons">
             <a href="#articulos"
@@ -70,7 +71,7 @@
               ><button class="button warning">Administrar categorias</button>
             </a>
             <br />
-            <button class="button alert">Cerrar sesion</button>
+            <button ng-click="logOut();" class="button alert">Cerrar sesion</button>
           </div>
         </div>
       </div>
