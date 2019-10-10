@@ -80,6 +80,7 @@ h4, p {
   background-color: #555;
   color: #e68d10;
   border-radius: 5px;
+  width: auto;
 }
 
 .titulo {
