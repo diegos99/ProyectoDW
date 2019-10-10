@@ -3,7 +3,7 @@ angular.module('revista').factory('UserService', ['$http', '$cookies', '$window'
 
         var factory = {};
 
-        factory.getUsers = function (callback) {
+        factory.getUsuarios = function (callback) {
             var req = {
                 method: 'GET',
                 url: 'http://localhost/revista_unis/api/usuario/read.php',
@@ -16,7 +16,7 @@ angular.module('revista').factory('UserService', ['$http', '$cookies', '$window'
             });
         }
 
-        factory.createUser = function (data, callback) {
+        factory.createUsuario = function (data, callback) {
             var req = {
                 method: 'POST',
                 url: 'http://localhost/revista_unis/api/usuario/create.php',
