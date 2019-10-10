@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .barra {
   background-color: #e68d10;
   height: 30px;
@@ -75,6 +76,11 @@ img {
   height: 160px;
 }
 
+.adds {
+  width: 100%;
+}
+
+/* Diseño para los art destacados */
 .image-hover {
   position: relative;
 }
@@ -137,6 +143,118 @@ img {
   top: 50px;
   width: 200px;
   z-index: 10;
+}
+
+/* Diseño de la lista de cat y sub cat */
+.expand-column-wrapper {
+  height: 100%;
+  max-wdtih: 1000px;
+}
+.expand-column-wrapper .cell {
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expand-column-wrapper .cell:hover {
+  flex-basis: 40%;
+}
+.expand-column-wrapper .cell:hover .expand-column-content {
+  opacity: 1;
+}
+.expand-column-wrapper .expand-column-content {
+  color: #fff;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 39.9375em) {
+  .expand-column-wrapper {
+    flex-direction: column;
+  }
+}
+
+.expand-column-wrapper .cell:nth-of-type(1) {
+  background: url("https://corbuse.edu.mx/blog/wp-content/uploads/2019/02/CORBUS%C3%89-como-emprender-un-negocio-de-comida-ser-chef-es-el-primer-paso.jpg") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+.expand-column-wrapper .cell:nth-of-type(2) {
+  background: transparent url("https://www.perspectiva.com.gt/wp-content/uploads/guia-de-regalos-para-un-papa-con-estilo-saul-saul-e-mendez-suscripcion-al-gym.jpg") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+.expand-column-wrapper .cell:nth-of-type(3) {
+  background: url("https://reddigitalusa.com/wp-content/uploads/2017/11/Fondox.net_usain-bolt-en-los-juegos_1680x1050.jpg") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+.expand-column-wrapper .cell:nth-of-type(4) {
+  background: url("https://img.cancaonova.com/cnimages/canais/uploads/sites/15/2018/11/Casa-do-m%C3%BAsico-F%C3%A9-em-Deus-e-p%C3%A9-na-estrada.png") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+.expand-column-wrapper .cell:nth-of-type(5) {
+  background: url("https://ultra106five.com/wp-content/uploads/2019/07/Shane-Michael-Hutton-Public-speaking.jpg") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+
+/* Diseño de ultimos 10 art */
+.product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 250px;
+  width: 25px;
 }
 
 /*# sourceMappingURL=app.css.map */
