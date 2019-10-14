@@ -1,0 +1,92 @@
+.barra {
+  background-color: #e68d10;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+}
+
+.logo-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.top-bar {
+  background-color: #555;
+}
+
+.dropdown.menu > li.is-active > a {
+  background: transparent;
+  color: white;
+}
+
+.title-bar {
+  background-color: #e68d10;
+}
+
+.menu-container ul {
+  background-color: #555;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+}
+nav a:focus,
+nav a:hover {
+  color: white;
+}
+nav .submenu a {
+  color: #555;
+}
+nav li:hover,
+nav li:focus {
+  background-color: #e68d10;
+}
+nav .top-bar-right li:hover,
+nav .top-bar-right li:focus {
+  background-color: transparent;
+}
+nav .button {
+  border-radius: 8px;
+  background-color: #e68d10;
+}
+nav .button:hover,
+nav .button:focus {
+  background-color: #e68d10c9;
+}
+
+img {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -16px;
+}
+
+.top-bar-left {
+  margin-top: 4px;
+}
+
+footer {
+  background-color: #555;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+footer .texto {
+  line-height: 50px;
+}
+
+/*# sourceMappingURL=modulo-anuncios.css.map */
