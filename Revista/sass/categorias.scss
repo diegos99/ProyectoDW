@@ -7,38 +7,44 @@ $hover-button-color: #e68d10c9;
   height: 30px;
   color: white;
   text-align: center;
-  line-height: 30px;  
+  line-height: 30px;
 }
 
 .logo-space {
   display: table;
   height: 250px;
-  .logo-container {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .logo {
-    display: block;
-    margin: auto;
-    width: auto;
-    height: auto;
-    border-radius: 0%;
-  }
 }
 
-.top-bar {  
-  background-color: $secondary-color;  
+.logo-container {
+  display: table-cell;
+  vertical-align: middle;
 }
+.logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.top-bar {
+  background-color: $secondary-color;
+}
+
+.dropdown.menu > li.is-active > a {
+  background: transparent;
+  color: white;
+}
+
 .title-bar {
-  background-color: $primary-color;  
+  background-color: $primary-color;
 }
 .menu-container ul {
-  background-color: $secondary-color;  
+  background-color: $secondary-color;
+  margin-top: 10px;
 }
-nav {  
+nav {
   a {
     color: white;
-    line-height: 60px !important;    
   }
   a:focus,
   a:hover {
@@ -61,21 +67,32 @@ nav {
     border-radius: 8px;
     background-color: $primary-color;
   }
-  
+
   .button:hover,
   .button:focus {
-    background-color: $hover-button-color ;
+    background-color: $hover-button-color;
   }
 }
 
-footer{
+img {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -16px;
+}
+
+.top-bar-left{
+  margin-top: 4px;
+}
+
+footer {
   background-color: $secondary-color;
   height: 50px;
-  text-align: center;  
-  color: white;  
-  .texto{
-    line-height: 50px;    
-  }    
+  text-align: center;
+  color: white;
+  .texto {
+    line-height: 50px;
+  }
 }
 
 
@@ -94,13 +111,4 @@ h4, p{
 }
 tr, td, th{
     border: rgba(128, 128, 128, 0.226) solid 1px;
-}
-img {
-  width: 100px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-.top-bar-left{
-  margin-top: 25px;
 }
