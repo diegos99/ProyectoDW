@@ -89,4 +89,55 @@ footer .texto {
   line-height: 50px;
 }
 
+/* Estilo de la tabla */
+h4,
+p {
+  text-align: justify;
+}
+
+.encabezado {
+  background-color: #555;
+  color: #e68d10;
+  border-radius: 5px;
+  width: auto;
+}
+
+.titulo {
+  text-align: left;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+tr,
+td,
+th {
+  border: rgba(128, 128, 128, 0.226) solid 1px;
+}
+
+tr:nth-child(odd) td {
+  background: #83828259;
+}
+
+tr:nth-child(even) td {
+  background: transparent;
+}
+
+.fi-link {
+  color: #3adb76;
+}
+
+.fi-link:focus,
+.fi-link:hover {
+  color: #22bb5b;
+}
+
+.fi-x-circle {
+  color: #ec5840;
+}
+
+.fi-x-circle:focus,
+.fi-x-circle:hover {
+  color: #da3116;
+}
+
 /*# sourceMappingURL=modulo-moderacion.css.map */
