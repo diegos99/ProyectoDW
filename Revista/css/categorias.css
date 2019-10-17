@@ -103,10 +103,15 @@ h4, p {
 .titulo {
   text-align: left;
   line-height: 50px;
+  margin-left: 20px;
 }
 
 tr, td, th {
   border: rgba(128, 128, 128, 0.226) solid 1px;
+}
+
+.reveal {
+  left: 26%;
 }
 
 /*# sourceMappingURL=categorias.css.map */
