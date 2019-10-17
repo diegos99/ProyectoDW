@@ -122,22 +122,31 @@ tr:nth-child(even) td {
   background: transparent;
 }
 
-.fi-link {
-  color: #3adb76;
+.reveal {
+  border-radius: 10px;
+  left: 26%;
 }
 
-.fi-link:focus,
-.fi-link:hover {
-  color: #22bb5b;
+/* Estilo para los botones */
+.button {
+  border-radius: 30px;
 }
 
-.fi-x-circle {
-  color: #ec5840;
+table .button {
+  border-radius: 30px;
 }
-
-.fi-x-circle:focus,
-.fi-x-circle:hover {
-  color: #da3116;
+table .button.success {
+  margin-right: -800px;
+}
+table .button.warning {
+  margin-left: -7px;
+}
+table .button.alert {
+  color: #fff;
+  margin-left: -12px;
+}
+table h5 {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=modulo-moderacion.css.map */

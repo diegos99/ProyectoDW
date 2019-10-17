@@ -78,6 +78,23 @@
     </header>
     <br />
     <br />
+    <section>
+      <div class="row">
+        <h5>Nomenclatura</h5>
+        <hr />        
+        <button class="button success">
+          <i class="fi-link"></i>
+        </button> Ir al comentario.
+        <br>
+        <button class="button warning">
+          <i class="fi-flag"></i>
+        </button> Censurar comentario.
+        <br>
+        <button class="button alert">
+          <i class="fi-x-circle"></i>
+        </button> Ignorar comentario reportado.
+      </div>
+    </section>
     <br />
     <section>
       <div class="row">
@@ -90,7 +107,7 @@
               <th>Id Comentario</th>
               <th>User</th>
               <th>No. Reportes</th>
-              <th>Comentario</th>
+              <th width="730">Comentario</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -110,9 +127,24 @@
                 </p>
               </td>
               <td>
-                <a href="#0" class="fi-link">Ir</a>
-                <br />
-                <a href="#0" class="fi-x-circle">Ignorar</a>
+                <div class="row">
+                  <div class="large-4 column">
+                    <a href="#0"
+                      ><button class="button success">
+                        <i class="fi-link"></i></button
+                    ></a>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button warning" data-open="censurar">
+                      <i class="fi-flag"></i>
+                    </button>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button alert" data-open="ignorar">
+                      <i class="fi-x-circle"></i>
+                    </button>
+                  </div>
+                </div>
               </td>
             </tr>
             <tr>
@@ -130,9 +162,24 @@
                 </p>
               </td>
               <td>
-                <a href="#0" class="fi-link">Ir</a>
-                <br />
-                <a href="#0" class="fi-x-circle">Ignorar</a>
+                <div class="row">
+                  <div class="large-4 column">
+                    <a href="#0"
+                      ><button class="button success">
+                        <i class="fi-link"></i></button
+                    ></a>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button warning" data-open="censurar">
+                      <i class="fi-flag"></i>
+                    </button>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button alert" data-open="ignorar">
+                      <i class="fi-x-circle"></i>
+                    </button>
+                  </div>
+                </div>
               </td>
             </tr>
             <tr>
@@ -150,9 +197,24 @@
                 </p>
               </td>
               <td>
-                <a href="#0" class="fi-link">Ir</a>
-                <br />
-                <a href="#0" class="fi-x-circle">Ignorar</a>
+                <div class="row">
+                  <div class="large-4 column">
+                    <a href="#0"
+                      ><button class="button success">
+                        <i class="fi-link"></i></button
+                    ></a>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button warning" data-open="censurar">
+                      <i class="fi-flag"></i>
+                    </button>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button alert" data-open="ignorar">
+                      <i class="fi-x-circle"></i>
+                    </button>
+                  </div>
+                </div>
               </td>
             </tr>
             <tr>
@@ -170,15 +232,59 @@
                 </p>
               </td>
               <td>
-                <a href="#0" class="fi-link">Ir</a>
-                <br />
-                <a href="#0" class="fi-x-circle">Ignorar</a>
+                <div class="row">
+                  <div class="large-4 column">
+                    <a href="#0"
+                      ><button class="button success">
+                        <i class="fi-link"></i></button
+                    ></a>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button warning" data-open="censurar">
+                      <i class="fi-flag"></i>
+                    </button>
+                  </div>
+                  <div class="large-4 column">
+                    <button class="button alert" data-open="ignorar">
+                      <i class="fi-x-circle"></i>
+                    </button>
+                  </div>
+                </div>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
+
+    <div class="reveal row callout warning" id="censurar" data-reveal>
+      <h5>Atención!!</h5>
+      <p>
+        Comentario censurado.
+      </p>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="reveal row callout alert" id="ignorar" data-reveal>
+      <h5>Atención!!</h5>
+      <p>
+        Comentario ignorado
+      </p>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 
     <footer>
       <div class="row">

@@ -122,17 +122,31 @@ tr:nth-child(odd) td {
 tr:nth-child(even) td {
   background: transparent;
 }
-.fi-link{
-  color:#3adb76;
+.reveal {
+  border-radius: 10px;
+  left: 26%;
 }
-.fi-link:focus,
-  .fi-link:hover {
-    color:  #22bb5b;
-  }
-.fi-x-circle{
-  color: #ec5840;  
+
+/* Estilo para los botones */
+.button {
+  border-radius: 30px;
 }
-.fi-x-circle:focus,
-  .fi-x-circle:hover {
-    color: #da3116;
+
+table {
+  .button {
+    border-radius: 30px;
   }
+  .button.success {
+    margin-right: -800px;
+  }
+  .button.warning {
+    margin-left: -7px;
+  }
+  .button.alert {
+    color: #fff;
+    margin-left: -12px;
+  }
+  h5 {
+    font-weight: 600;
+  }
+}
