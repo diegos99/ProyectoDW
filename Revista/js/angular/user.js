@@ -1,5 +1,5 @@
-angular.module('revista').controller('UserController', ['$scope', '$window', '$cookies',
-    function($scope, $window, $cookies) {
+angular.module('revista').controller('UserController', ['$scope', '$window', '$cookies', 'UserService',
+    function($scope, $window, $cookies, UserService) {
             
         function isLogged() {
             if (JSON.parse($cookies.getObject("loggedUser")) == null) {
@@ -16,6 +16,23 @@ angular.module('revista').controller('UserController', ['$scope', '$window', '$c
             $cookies.remove("loggedUser");
             $window.location.href = '#/home';
         }
+
+        $scope.updateUserPassword = function () {
+            var user = JSON.parse($cookies.getObject("loggedUser"));
+            var toUpdate = {
+                id: user.id_u,
+                contrasena: $scope.passwordToUpdate
+            };
+
+            UserService.updateContrasenaUsuario(toUpdate, function(response) {
+                alert("contraseña actualizada");
+                $scope.logOut();
+                $window.location.href = '#/login';
+            });
+        }
+
+        $(document).foundation();
+
 
 
         isLogged();

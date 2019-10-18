@@ -29,6 +29,10 @@ angular.module('revista', ['ngRoute', 'ngCookies'])
                 templateUrl: 'html/crear_art.html',
                 controller: 'ArticleController'
             })
+            .when("/registrarme", {
+                templateUrl: 'html/signin.html',
+                controller: 'SignInController'
+            })
             .otherwise("/home");
     }]);
 
