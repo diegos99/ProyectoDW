@@ -66,6 +66,21 @@ angular.module('revista').controller('UsuariosController', ['$scope', 'UserServi
             });
         }
 
+        $scope.setUsuarioToRol = function(usuario) {
+            $scope.userToUpdate = usuario;
+            $scope.updateIdR = usuario.id_r;
+        }
+
+        $scope.updateUserRol = function() {
+            var toUpdate = {
+                id_u: $scope.userToUpdate.id_u,
+                id_r: $scope.updateIdR
+            };
+            UserService.updateRolUsuario(toUpdate, function(response) {
+                getUsuarios();
+            });
+        }
+
         getUsuarios();
         getRoles();
         $(document).foundation();

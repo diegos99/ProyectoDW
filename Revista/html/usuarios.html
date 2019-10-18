@@ -42,6 +42,12 @@
                       <button class="button alert" data-open="del-cat" ng-click="setUsuarioToDelete(usuario);">
                           <i class="fi-trash"></i>
                       </button>
+                      <button class="button success" data-open="del-cat" ng-click="setUpdatePassword(usuario);">
+                            <i class="fi-key"></i>
+                    </button>
+                    <button class="button alert" data-open="editar-rol" ng-click="setUsuarioToRol(usuario);">
+                        <i class="fi-torsos-all"></i>
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -131,6 +137,32 @@
                 </div>
           </div>    
       </div>
+
+      <div class="reveal" id="editar-rol" data-reveal>      
+            <div class="row">
+                <div class="large-12 columns">    
+                    <h4 class="text-center">Cambia el rol del usuario</h4>
+                    <hr>
+                    <p>
+                      Selecciona el rol que deseas asignarle al usuario
+                    </p>      
+                          <div class="large-12 columns">
+                              <form>        
+                                    <label>Rol
+                                            <select ng-model="updateIdR">      
+                                                <option value="" disabled selected>Selecciona un rol</option>                  
+                                                <option ng-repeat="rol in roles" value="{{rol.id_r}}">{{rol.nombre}}</option>                      
+                                            </select>
+                                        </label>             
+                                  <p>
+                                      <button data-close ng-click="updateUserRol();" class="button expanded success">Actualizar</button>
+                                  </p>                                
+                                  </form> 
+                              <br />                                         
+                          </div>    
+                  </div>
+            </div>    
+        </div>
   
       <div class="reveal" id="del-cat" data-reveal>      
               <h4 class="text-center">Eliminar usuario</h4>
