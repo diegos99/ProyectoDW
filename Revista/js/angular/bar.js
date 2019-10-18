@@ -7,7 +7,6 @@ angular.module('revista').controller('BarController', ['$scope', '$cookies',
             } else {
                 $scope.isLogged = true;
                 $scope.user = JSON.parse($cookies.getObject("loggedUser"));
-                console.log($scope.user);
             }
         }
 

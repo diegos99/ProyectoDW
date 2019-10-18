@@ -17,6 +17,19 @@ angular.module('revista').factory('SubCategoryService', ['$http',
             });
         }
 
+        factory.getSubCategoriesByCategory = function (data, callback) {
+            var req = {
+                method: 'GET',
+                url: 'http://localhost/revista_unis/api/subcategoria/read_category.php?id_c=' + data.id_c,
+                header: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            $http(req).success(function (response) {
+                callback(response);
+            });
+        }
+
         factory.createSubCategoria = function (data, callback) {
             var req = {
                 method: 'POST',

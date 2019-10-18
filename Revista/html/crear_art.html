@@ -24,7 +24,7 @@
             >Description Lorem ipsum dolor sit amet, consectetur adipisicing
             elit.
           </span>
-          <button class="button success" data-open="crear-t1">
+          <button ng-click="setPlantillaToCreate(1);" class="button success" data-open="crear-t1">
             <i class="fi-plus"> Crear articulo</i>
           </button>
         </div>
@@ -39,7 +39,7 @@
             >Description Lorem ipsum dolor sit amet, consectetur adipisicing
             elit.
           </span>
-          <button class="button success" data-open="crear-t2">
+          <button ng-click="setPlantillaToCreate(2);" class="button success" data-open="crear-t2">
             <i class="fi-plus"> Crear articulo</i>
           </button>
         </div>
@@ -54,7 +54,7 @@
             >Description Lorem ipsum dolor sit amet, consectetur adipisicing
             elit.
           </span>
-          <button class="button success" data-open="crear-t3">
+          <button ng-click="setPlantillaToCreate(3);" class="button success" data-open="crear-t3">
             <i class="fi-plus"> Crear articulo</i>
           </button>
         </div>
@@ -75,50 +75,34 @@
           <thead>
             <tr>
               <th>Id Artículo</th>
-              <th>Nombre del artículo</th>
-              <th>Tipo de acceso</th>
+              <th>Titulo del artículo</th>
+              <th>Fecha de publicación</th>
+              <th>Plantilla</th>
+              <th>Categoria</th>
+              <th>SubCategoria</th>
               <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
+            <tr ng-repeat="articulo in articulos">
+              <td>{{articulo.id_a}}</td>
               <td>
-                Artículo 1
+                {{articulo.titulo}}
               </td>
-              <td>Premium</td>
               <td>
-                <button class="button warning" data-open="editar-cat">
-                  <i class="fi-pencil"></i>
-                </button>
-                <button class="button alert" data-open="del-cat">
-                  <i class="fi-trash"></i>
-                </button>
+                  {{articulo.fecha_p}}
               </td>
-            </tr>
-            <tr>
-              <td>2</td>
               <td>
-                Artículo 2
+                {{articulo.plantilla}}
               </td>
-              <td>Gratuito</td>
               <td>
-                <button class="button warning" data-open="editar-cat">
-                  <i class="fi-pencil"></i>
-                </button>
-                <button class="button alert" data-open="del-cat">
-                  <i class="fi-trash"></i>
-                </button>
+                {{articulo.nombre_categoria}}
               </td>
-            </tr>
-            <tr>
-              <td>3</td>
               <td>
-                Artículo 3
+                {{articulo.nombre_sub_categoria}}
               </td>
-              <td>Premium</td>
               <td>
-                <button class="button warning" data-open="editar-cat">
+                <button ng-click="updating(articulo);setCategoryToUpdate();" class="button warning" data-open="editar-cat">
                   <i class="fi-pencil"></i>
                 </button>
                 <button class="button alert" data-open="del-cat">
@@ -141,24 +125,30 @@
         </p>
         <div class="large-12 columns">
           <form>
-            <label
-              >ID Categoría
-              <input type="number" placeholder="000" />
-            </label>
-            <label
-              >Nombre de la categoría
-              <input type="text" placeholder="Categoria" />
-            </label>
-            <label
-              >Tipos de acceso
-              <select>
-                <option value="premium">Premium</option>
-                <option value="gratuito">Gratuito</option>
-              </select>
-            </label>
+              <label>Categoria
+                  <select ng-model="categoriaToUpdate" ng-change="setCategoryToUpdate();">      
+                      <option value="" disabled selected>Selecciona una categoria</option>                  
+                      <option ng-repeat="categoria in categorias" value="{{categoria.id_c}}">{{categoria.nombre}}</option>                      
+                  </select>
+              </label> 
+              <label>SubCategoria
+                  <select ng-model="subCategoriaToUpdate">      
+                      <option value="" disabled selected>Selecciona una subcategoria</option>                  
+                      <option ng-repeat="subcategoria in subcategorias" value="{{subcategoria.id_s_c}}">{{subcategoria.nombre}}</option>                      
+                  </select>
+              </label> 
+              <label>Plantilla
+                  <select ng-model="plantillaToUpdate">      
+                      <option value="" disabled selected>Selecciona una plantilla</option>                  
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>                      
+                  </select>
+              </label> 
             <p>
               <input
-                type="submit"
+              ng-click="updateArticle()"
+                type="button"
                 class="button expanded warning"
                 value="Actualizar"
               />
