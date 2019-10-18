@@ -12,6 +12,7 @@ angular.module('revista').controller('LogInController', ['$scope', 'LogInService
                     $window.location.href = '#/home';
                 } else {
                     $scope.badCredentials = true;
+                    alert("Correo o contraseñas incorrectas");
                 }
             });
         };

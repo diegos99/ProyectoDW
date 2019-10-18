@@ -72,7 +72,21 @@ angular.module('revista').factory('UserService', ['$http', '$cookies', '$window'
                 callback(response);
             });
         }
-    
 
+        factory.updateContrasenaUsuario = function(data, callback) {
+            var req = {
+                method: 'PUT',
+                url: 'http://localhost/revista_unis/api/usuario/reset_password.php',
+                header: {
+                    'Content-Type': 'application/json'
+                },
+                data: data
+            };
+
+            $http(req).success(function(response) {
+                callback(response);
+            });
+        }
+    
         return factory;
 }]);

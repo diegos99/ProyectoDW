@@ -81,6 +81,21 @@ angular.module('revista').controller('UsuariosController', ['$scope', 'UserServi
             });
         }
 
+        $scope.setUpdatePassword = function(usuario) {
+            $scope.userToUpdate = usuario;
+        }
+
+        $scope.updateUserPassword = function () {
+            var toUpdate = {
+                id: $scope.userToUpdate.id_u,
+                contrasena: $scope.passwordToUpdate
+            };
+
+            UserService.updateContrasenaUsuario(toUpdate, function(response) {
+                getUsuarios();
+            });
+        }
+
         getUsuarios();
         getRoles();
         $(document).foundation();
