@@ -56,8 +56,8 @@ angular.module('revista').controller('ArticleController', ['$scope', '$cookies',
             $scope.plantillaToUpdate = plantilla;
         }
 
-        $scope.setCategoryToCreate = function(categoria) {
-            $scope.categoriaToCreate = categoria;
+        $scope.setCategoryToCreate = function() {
+            $scope.categoriaToCreate = $scope.createIdC;
             getSubCategoriasToCreate();
         }
 
@@ -66,15 +66,21 @@ angular.module('revista').controller('ArticleController', ['$scope', '$cookies',
         }
 
         $scope.createArticle = function() {
+            var user = JSON.parse($cookies.getObject("loggedUser"));
             var toCreate = {
-                nombre: $scope.createName,
-                id_s: $scope.createIdS
+                id_s_c: $scope.createIdSC,
+                id_u: user.id_u,
+                plantilla: $scope.plantillaToCreate,
+                text: $scope.createText,
+                titulo: $scope.createTitle
             };
 
             ArticleService.createArticulo(toCreate, function (response) {
                 getMisArticulos();
-                $scope.createName = null;
-                $scope.createIdS = null;
+                $scope.createIdSC = null;
+                $scope.plantillaToCreate = null;
+                $scope.createText = null;
+                $scope.createTitle = null;
             });
         }
 
