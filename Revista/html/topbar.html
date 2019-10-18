@@ -18,14 +18,14 @@
               <ul class="dropdown menu" data-dropdown-menu>
                 <li><a href="#home" id="categ">Inicio</a></li>
                 <li>
-                  <a href="#categorias" id="categ">Categorias</a>
+                  <a href="#categorias" ng-show="isAdmin" id="categ">Categorias</a>
                 </li>
                 <li class="has-submenu">
-                  <a href="#subcategorias" id="categ">Sub Categorias</a>
+                  <a href="#subcategorias" ng-show="isAdmin" id="categ">Sub Categorias</a>
                 </li>
-                <li><a href="#articulos" id="categ">Articulos</a></li>
-                <li><a href="#usuarios" id="categ">Usuarios</a></li>
-                <li><a href="#comprar" id="categ">Comprar subscripcion</a></li>
+                <li><a href="#articulos" ng-show="isAutor" id="categ">Articulos</a></li>
+                <li><a href="#usuarios" ng-show="isAdmin" id="categ">Usuarios</a></li>
+                <li><a href="#comprar" ng-show="isLector" id="categ">Comprar subscripcion</a></li>
               </ul>
             </div>
         <div class="top-bar-right menu-container" ng-show="isLogged">

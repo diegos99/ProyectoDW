@@ -81,6 +81,7 @@ angular.module('revista').controller('ArticleController', ['$scope', '$cookies',
                 $scope.plantillaToCreate = null;
                 $scope.createText = null;
                 $scope.createTitle = null;
+                alert("Articulo creado");
             });
         }
 
