@@ -7,40 +7,32 @@ $hover-button-color: #e68d10c9;
   height: 30px;
   color: white;
   text-align: center;
-  line-height: 30px;
+  line-height: 30px;  
 }
 
 .logo-space {
   display: table;
   height: 250px;
-}
-
-.logo-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-.logo {
-  display: block;
-  margin: auto;
-  width: auto;
-  height: auto;
+  .logo-container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .logo {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
 }
 
 .top-bar {
   background-color: $secondary-color;
 }
-
-.dropdown.menu > li.is-active > a {
-  background: transparent;
-  color: white;
-}
-
 .title-bar {
   background-color: $primary-color;
 }
 .menu-container ul {
   background-color: $secondary-color;
-  margin-top: 10px;
 }
 nav {
   a {
@@ -67,54 +59,40 @@ nav {
     border-radius: 8px;
     background-color: $primary-color;
   }
-
+  
   .button:hover,
   .button:focus {
-    background-color: $hover-button-color;
+    background-color: $hover-button-color ;
   }
 }
 
-img {
-  width: 80px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: -16px;
-}
-
-.top-bar-left{
-  margin-top: 4px;
-}
-
-footer {
+footer{
   background-color: $secondary-color;
   height: 50px;
-  text-align: center;
-  color: white;
-  .texto {
-    line-height: 50px;
-  }
+  text-align: center;  
+  color: white;  
+  .texto{
+    line-height: 50px;    
+  }    
 }
 
 
-h4, p{
-    text-align: center;
-}
 .encabezado{
-    background-color: $secondary-color;// rgb(24, 21, 21);                
-    color: $primary-color;
-    border-radius: 5px;
-    width: auto;    
+    margin: auto;    
+    background: url("https://pmcvariety.files.wordpress.com/2016/03/dodgers-tv-rights.jpg");    
+    opacity: 0.9;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    filter: brightness(0.6);
 }
-.titulo{
-    text-align: left;
-    line-height: 50px;  
-    margin-left: 20px;  
+h1{
+    line-height: 350px;  
+    color: white;  
 }
-tr, td, th{
-    border: rgba(128, 128, 128, 0.226) solid 1px;
+img{
+    width: 800px;
+    height: 350px;
 }
 
-
-.reveal {
-  left: 26%;
-}

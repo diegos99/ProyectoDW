@@ -1,0 +1,486 @@
+<link rel="stylesheet" href="css/crear_art.css" />
+    
+    <div ng-include="'html/topbar.html'"></div>
+
+    <!-- Templates a escoger -->
+    <section>
+      <div class="row column">
+        <hr />
+        <h4 class="text-center">Creación de artículos</h4>
+        <hr />
+        <br />
+        <h5>Seleccione el template que desea utilziar para su artículo:</h5>
+        <br />
+      </div>
+      <div class="row">
+        <div class="large-4 column product-card">
+          <div class="product-card-thumbnail">
+            <img src="imagenes/Template1.jpg" />
+          </div>
+          <h6 class="product-card-title">
+            Template 1
+          </h6>
+          <span class="product-card-desc"
+            >Description Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+          </span>
+          <button class="button success" data-open="crear-t1">
+            <i class="fi-plus"> Crear articulo</i>
+          </button>
+        </div>
+        <div class="large-4 column product-card">
+          <div class="product-card-thumbnail">
+            <img src="imagenes/Template2.jpg" />
+          </div>
+          <h6 class="product-card-title">
+            Template 2
+          </h6>
+          <span class="product-card-desc"
+            >Description Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+          </span>
+          <button class="button success" data-open="crear-t2">
+            <i class="fi-plus"> Crear articulo</i>
+          </button>
+        </div>
+        <div class="large-4 column product-card">
+          <div class="product-card-thumbnail">
+            <img src="imagenes/Template3.jpg" />
+          </div>
+          <h6 class="product-card-title">
+            Template 3
+          </h6>
+          <span class="product-card-desc"
+            >Description Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+          </span>
+          <button class="button success" data-open="crear-t3">
+            <i class="fi-plus"> Crear articulo</i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Tabla de articulos -->
+    <section>
+      <div class="row">
+        <table>
+          <div class="row encabezado">
+            <h4 class="titulo">Mis artículos</h4>
+          </div>
+          <thead>
+            <tr>
+              <th>Id Artículo</th>
+              <th>Nombre del artículo</th>
+              <th>Tipo de acceso</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Artículo 1
+              </td>
+              <td>Premium</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Artículo 2
+              </td>
+              <td>Gratuito</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Artículo 3
+              </td>
+              <td>Premium</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Modales -->
+    <div class="reveal" id="editar-cat" data-reveal role="dialog">
+      <div class="large-12 columns">
+        <h4 class="text-center">Editor de Artículo</h4>
+        <hr />
+        <p>
+          Llene los siguientes campos para editar el artículo seleccionado
+        </p>
+        <div class="large-12 columns">
+          <form>
+            <label
+              >ID Categoría
+              <input type="number" placeholder="000" />
+            </label>
+            <label
+              >Nombre de la categoría
+              <input type="text" placeholder="Categoria" />
+            </label>
+            <label
+              >Tipos de acceso
+              <select>
+                <option value="premium">Premium</option>
+                <option value="gratuito">Gratuito</option>
+              </select>
+            </label>
+            <p>
+              <input
+                type="submit"
+                class="button expanded warning"
+                value="Actualizar"
+              />
+            </p>
+          </form>
+          <br />
+        </div>
+        <button
+          class="close-button"
+          data-close
+          aria-label="Close modal"
+          type="button"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="reveal" id="del-cat" data-reveal>
+      <h4 class="text-center">Eliminar artículo</h4>
+      <hr />
+      <p>
+        ¿Está seguro que desea eliminar este artículo?
+      </p>
+      <p>
+        <button class="button" data-close aria-label="Close modal">
+          Cancelar
+        </button>
+        <button class="button alert">Eliminar</button>
+      </p>
+    </div>
+    <div class="reveal" id="crear-t1" data-reveal>
+      <h4 class="text-center">Artículo - Template 1</h4>
+      <hr />
+      <p>
+        Llene los siguientes campos para crear un artículo
+      </p>
+      <div class="large-12 columns">
+        <form>
+          <label class="large-3 column"
+            >ID Artículo
+            <input type="number" placeholder="0000" />
+          </label>
+          <label class="large-4 column"
+            >Autor
+            <input type="text" placeholder="nombre apellido" />
+          </label>
+          <label class="large-5 column"
+            >Fecha
+            <input type="date" name="fecha" size="20" />
+          </label>
+          <label
+            >Título del artículo
+            <input type="text" placeholder="Titulo del articulo" />
+          </label>
+          <label class="large-6 column"
+            >Categoría
+            <select>
+              <option>Gastronomía</option>
+              <option>Moda</option>
+              <option>Deportes</option>
+              <option>Música</option>
+              <option>Política</option>
+            </select>
+          </label>
+          <label class="large-6 column"
+            >Sub-Categoría
+            <select name="menu">
+              <option selected>...</option>
+              <optgroup label="Gastronomía">
+                <option value="1">Sub-Cat 1</option>
+                <option value="2">Sub-Cat 2</option>
+                <option value="3">Sub-Cat 3</option>
+              </optgroup>
+              <optgroup label="Moda">
+                <option value="4">Sub-Cat 1</option>
+                <option value="5">Sub-Cat 2</option>
+                <option value="6">Sub-Cat 3</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Tipos de acceso
+            <select>
+              <option value="premium">Premium</option>
+              <option value="gratuito">Gratuito</option>
+            </select>
+          </label>
+          <label
+            >Contenido del artículo
+            <textarea placeholder="Ingrese el texto de su articulo"></textarea>
+          </label>
+          <label class="large-6 column"
+            >Seleccione la imagen de portada
+            <input type="file" name="archivo" value="image/*" />
+          </label>
+          <label class="large-6 column"
+            >Seleccione 2 imagenes para el artiículo
+            <input type="file" name="archivo" value="image/*" />
+            <input type="file" name="archivo" value="image/*" />
+          </label>
+          <p>
+            <input
+              type="submit"
+              class="button expanded success"
+              value="Crear artículo"
+            />
+          </p>
+        </form>
+        <br />
+      </div>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="reveal" id="crear-t2" data-reveal>
+      <h4 class="text-center">Artículo - Template 2</h4>
+      <hr />
+      <p>
+        Llene los siguientes campos para crear un artículo
+      </p>
+      <div class="large-12 columns">
+        <form>
+          <label class="large-3 column"
+            >ID Artículo
+            <input type="number" placeholder="0000" />
+          </label>
+          <label class="large-4 column"
+            >Autor
+            <input type="text" placeholder="nombre apellido" />
+          </label>
+          <label class="large-5 column"
+            >Fecha
+            <input type="month" name="mes" size="20" />
+          </label>
+          <br />
+          <label
+            >Título del artículo
+            <input type="text" placeholder="Titulo del articulo" />
+          </label>
+          <label class="large-6 column"
+            >Categoría
+            <select>
+              <option>Gastronomía</option>
+              <option>Moda</option>
+              <option>Deportes</option>
+              <option>Música</option>
+              <option>Política</option>
+            </select>
+          </label>
+          <label class="large-6 column"
+            >Sub-Categoría
+            <select name="menu">
+              <option selected>...</option>
+              <optgroup label="Gastronomía">
+                <option value="1">Sub-Cat 1</option>
+                <option value="2">Sub-Cat 2</option>
+                <option value="3">Sub-Cat 3</option>
+              </optgroup>
+              <optgroup label="Moda">
+                <option value="4">Sub-Cat 1</option>
+                <option value="5">Sub-Cat 2</option>
+                <option value="6">Sub-Cat 3</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Tipos de acceso
+            <select>
+              <option value="premium">Premium</option>
+              <option value="gratuito">Gratuito</option>
+            </select>
+          </label>
+          <label
+            >Contenido del artículo
+            <textarea placeholder="Ingrese el texto de su articulo"></textarea>
+          </label>
+          <label
+            >Subtítulo
+            <input type="text" placeholder="Subtítulo" />
+          </label>
+          <label
+            >Sub Contenido
+            <textarea placeholder="Ingrese el texto de su articulo"></textarea>
+          </label>
+          <label class="large-6 column"
+            >Seleccione la imagen de portada
+            <input type="file" name="archivo" value="image/*" />
+          </label>
+          <label class="large-6 column"
+            >Seleccione 1 imagen para el artiículo
+            <input type="file" name="archivo" value="image/*" />
+          </label>
+          <p>
+            <input
+              type="submit"
+              class="button expanded success"
+              value="Crear artículo"
+            />
+          </p>
+        </form>
+        <br />
+      </div>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="reveal" id="crear-t3" data-reveal>
+      <h4 class="text-center">Artículo - Template 2</h4>
+      <hr />
+      <p>
+        Llene los siguientes campos para crear un artículo
+      </p>
+      <div class="large-12 columns">
+        <form>
+          <label class="large-3 column"
+            >ID Artículo
+            <input type="number" placeholder="0000" />
+          </label>
+          <label class="large-4 column"
+            >Autor
+            <input type="text" placeholder="nombre apellido" />
+          </label>
+          <label class="large-5 column"
+            >Fecha
+            <input type="date" name="fecha" size="20" />
+          </label>
+          <br />
+          <label
+            >Título del artículo
+            <input type="text" placeholder="Titulo del articulo" />
+          </label>
+          <label class="large-6 column"
+            >Categoría
+            <select>
+              <option>Gastronomía</option>
+              <option>Moda</option>
+              <option>Deportes</option>
+              <option>Música</option>
+              <option>Política</option>
+            </select>
+          </label>
+          <label class="large-6 column"
+            >Sub-Categoría
+            <select name="menu">
+              <option selected>...</option>
+              <optgroup label="Gastronomía">
+                <option value="1">Sub-Cat 1</option>
+                <option value="2">Sub-Cat 2</option>
+                <option value="3">Sub-Cat 3</option>
+              </optgroup>
+              <optgroup label="Moda">
+                <option value="4">Sub-Cat 1</option>
+                <option value="5">Sub-Cat 2</option>
+                <option value="6">Sub-Cat 3</option>
+              </optgroup>
+            </select>
+          </label>
+          <label
+            >Tipos de acceso
+            <select>
+              <option value="premium">Premium</option>
+              <option value="gratuito">Gratuito</option>
+            </select>
+          </label>
+          <label
+            >Contenido del artículo
+            <textarea placeholder="Ingrese el texto de su articulo"></textarea>
+          </label>
+          <label
+            >Subtítulo
+            <input type="text" placeholder="Subtítulo" />
+          </label>
+          <label
+            >Sub Contenido
+            <textarea placeholder="Ingrese el texto de su articulo"></textarea>
+          </label>
+          <label class="large-6 column"
+            >Seleccione la imagen de portada
+            <input type="file" name="archivo" value="image/*" />
+          </label>
+          <label class="large-6 column"
+            >Seleccione 4 imágenes para el Carrousel
+            <input type="file" name="archivo" value="image/*" />
+            <input type="file" name="archivo" value="image/*" />
+            <input type="file" name="archivo" value="image/*" />
+            <input type="file" name="archivo" value="image/*" />
+          </label>
+          <p>
+            <input
+              type="submit"
+              class="button expanded success"
+              value="Crear artículo"
+            />
+          </p>
+        </form>
+        <br />
+      </div>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <ul class="menu">
+          <li class="texto">Copyright © | Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>

@@ -1,13 +1,13 @@
 $primary-color: #e68d10;
 $secondary-color: #555;
 $hover-button-color: #e68d10c9;
-
+$white: white;
 .barra {
   background-color: $primary-color;
   height: 30px;
   color: white;
   text-align: center;
-  line-height: 30px;
+  line-height: 30px;  
 }
 
 .logo-space {
@@ -59,84 +59,25 @@ nav {
     border-radius: 8px;
     background-color: $primary-color;
   }
-
   .button:hover,
   .button:focus {
-    background-color: $hover-button-color;
+    background-color: $hover-button-color ;
   }
 }
 
-footer {
+footer{
   background-color: $secondary-color;
   height: 50px;
-  text-align: center;
-  color: white;
-  .texto {
-    line-height: 50px;
-  }
-}
-
-#login {
-  margin: auto;
-  width: 500px;
-  background-color: #cacaca;
-  border-radius: 7px;
-  padding: 16px;
-}
-
-.boton-foto-perfil {
-  border-radius: 100%;
-  background-color: transparent;
-}
-.boton-foto-perfil:hover {
-  background-color: transparent;
-}
-
-a {
-  color: black;
-}
-
-.profile {
-  background-color: #cacaca;
-  border-radius: 10px;
-}
-.contenido {
-  margin: auto;
-}
-
-h4 {
-  text-align: center;
-}
-
-.profile-userpic img {
-  width: 200px;
-  height: 180px;
-  border-radius: 50%;
-}
-
-.profile-usertitle {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.profile-usertitle-name {
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 7px;
-}
-
-.profile-usertitle-type {
-  text-transform: uppercase;
-  color: black;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-.profile-userbuttons {
   text-align: center;  
+  color: white;  
+  .texto{
+    line-height: 50px;    
+  }    
 }
-.profile-userbuttons .button {
-  text-transform: uppercase;
-  font-size: 11px;
+
+h2{
+    font-weight: bold;
+}
+h6{
+    color: $primary-color;
 }

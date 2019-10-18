@@ -1,28 +1,29 @@
-
-    <header> 
-        <div ng-include="'html/topbar.html'"></div>
-    </header>
+<link rel="stylesheet" href="css/login.css" />
+<div ng-include="'html/topbar.html'"></div>
     <section>
         <br />
         <br />
         <br />
         <br />
         <br />
-      <div class="row" id="login">
-        <div class="large-12 columns">
-          <form>
-            <h4 class="text-center">Iniciar sesión</h4>
-              <label>Email
-                <input type="email" placeholder="somebody@example.com" ng-model="correo">
-              </label>
-              <label>Password
-                <input type="password" placeholder="Contraseña" ng-model="contrasena">
-              </label>         
-                <button ng-click="login()">Iniciar sesión</button>  
-            </form> 
-            <br />                                   
-        </div>        
-      </div>
+        <div class="row" id="login">
+            <div class="large-12 columns">
+              <form>
+                <h4 class="text-center">Iniciar sesión</h4>
+                <label>Email
+                    <input type="email" placeholder="somebody@example.com" ng-model="correo">
+                  </label>
+                  <label>Password
+                      <input type="password" placeholder="Contraseña" ng-model="contrasena">
+                    </label>     
+                      <button class="button expanded" ng-click="login()">Iniciar sesión</button>  
+                <p class="text-center">
+                  <a href="#registro">Crear una cuenta</a>
+                </p>
+              </form>
+              <br />
+            </div>
+          </div>
       <br />
         <br />
         <br />

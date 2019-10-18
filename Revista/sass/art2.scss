@@ -1,0 +1,221 @@
+$primary-color: #e68d10;
+$secondary-color: #555;
+$hover-button-color: #e68d10c9;
+
+.barra {
+  background-color: $primary-color;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+  .logo-container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .logo {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+}
+
+.top-bar {
+  background-color: $secondary-color;
+}
+.title-bar {
+  background-color: $primary-color;
+}
+.menu-container ul {
+  background-color: $secondary-color;
+}
+nav {
+  a {
+    color: white;
+  }
+  a:focus,
+  a:hover {
+    color: white;
+  }
+  .submenu a {
+    color: $secondary-color;
+  }
+  li:hover,
+  li:focus {
+    background-color: $primary-color;
+  }
+  .top-bar-right {
+    li:hover,
+    li:focus {
+      background-color: transparent;
+    }
+  }
+  .button {
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: $hover-button-color;
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  height: 50px;
+  text-align: center;
+  color: white;
+  .texto {
+    line-height: 50px;
+  }
+}
+
+$redes-btn-size: 50px;
+$redes-btn-border-width: 2px;
+$redes-btn-font-size: 25px;
+$redes-btn-line-height: 32px;
+$redes-btn-border-radius: 27px;
+$redes-btn-transition: all 0.5s ease;
+$redes-btn-margin: 12px;
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$pinterest-color: #cb2027;
+
+@mixin redes-btn($color-marca, $brand-icon) {
+  background: $color-marca;
+
+  &:before {
+    font-family: "FontAwesome";
+    content: $brand-icon;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-marca;
+    background: white;
+    border-color: $color-marca;
+  }
+}
+
+.medium-11{
+  img{
+    width: 600px;
+    height: 300px;
+  }
+}
+.articulos{
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.article-container {
+  margin-top: 24px; 
+
+  .contenido {
+    margin-top: 32px;
+
+    .redes {
+      .redes-btn-curvo {
+        text-align: center;
+
+        .redes-btn {
+          display: block;
+          position: relative;
+          width: $redes-btn-size;
+          height: $redes-btn-size;
+          border: $redes-btn-border-width solid transparent;
+          text-align: center;
+          color: white;
+          font-size: $redes-btn-font-size;
+          line-height: $redes-btn-line-height;
+          border-radius: $redes-btn-border-radius;
+          transition: $redes-btn-transition;
+          margin-right: $redes-btn-margin;
+          margin-bottom: $redes-btn-margin;
+
+          &:hover,
+          &:focus {
+            transform: rotate(360deg);
+          }
+
+          &.facebook {
+            @include redes-btn($facebook-color, "\f09a");
+          }
+
+          &.twitter {
+            @include redes-btn($twitter-color, "\f099");
+          }
+
+          &.pinterest {
+            @include redes-btn($pinterest-color, "\f0d2");
+          }
+        }
+      }
+    }
+
+    .contenido {
+      color: black;
+    }
+  }
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;  
+  img {
+    width: 1400px;
+    height: 500px;
+    filter: brightness(0.6);
+  }
+  h1 {
+    font-weight: 600;
+    color: white;
+  }
+}
+
+.fecha{
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  transform: translate(-50%, -50%);  
+  text-align: left;
+  p {    
+    color: white;
+    font-weight: 600;    
+  }
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+.detalles {
+  a{
+    color: white;
+    font-weight: 50;
+  }
+  .autor {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .comentarios {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+}

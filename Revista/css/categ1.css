@@ -1,0 +1,138 @@
+.barra {
+  background-color: #e68d10;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+}
+.logo-space .logo-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.logo-space .logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.top-bar {
+  background-color: #555;
+}
+
+.title-bar {
+  background-color: #e68d10;
+}
+
+.menu-container ul {
+  background-color: #555;
+}
+
+nav a {
+  color: white;
+}
+nav a:focus,
+nav a:hover {
+  color: white;
+}
+nav .submenu a {
+  color: #555;
+}
+nav li:hover,
+nav li:focus {
+  background-color: #e68d10;
+}
+nav .top-bar-right li:hover,
+nav .top-bar-right li:focus {
+  background-color: transparent;
+}
+nav .button {
+  border-radius: 8px;
+  background-color: #e68d10;
+}
+nav .button:hover,
+nav .button:focus {
+  background-color: #e68d10c9;
+}
+
+footer {
+  background-color: #555;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+footer .texto {
+  line-height: 50px;
+}
+
+img {
+  width: 300px;
+  height: 160px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 > a {
+  color: #555;
+}
+
+h3 > a:hover {
+  color: #e68d10;
+}
+
+/* Estilo para articulos */
+.marketing-site-content-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.marketing-site-content-section .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.marketing-site-content-section .marketing-site-content-section-img {
+  align-self: center;
+  flex: 1 0 100%;
+}
+.marketing-site-content-section .marketing-site-content-section-img img {
+  width: 100%;
+  height: 300px;
+}
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-img {
+    flex: 1 0 50%;
+  }
+}
+.marketing-site-content-section .marketing-site-content-section-block {
+  padding: 16px;
+  flex: 1 0 100%;
+  align-self: stretch;
+  background: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (min-width: 640px) {
+  .marketing-site-content-section .marketing-site-content-section-block {
+    flex: 1 0 50%;
+    padding: 32px;
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=categ1.css.map */

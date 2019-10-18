@@ -89,29 +89,4 @@ footer .texto {
   line-height: 50px;
 }
 
-h4, p {
-  text-align: center;
-}
-
-.encabezado {
-  background-color: #555;
-  color: #e68d10;
-  border-radius: 5px;
-  width: auto;
-}
-
-.titulo {
-  text-align: left;
-  line-height: 50px;
-  margin-left: 20px;
-}
-
-tr, td, th {
-  border: rgba(128, 128, 128, 0.226) solid 1px;
-}
-
-.reveal {
-  left: 26%;
-}
-
-/*# sourceMappingURL=categorias.css.map */
+/*# sourceMappingURL=modulo-anuncios.css.map */

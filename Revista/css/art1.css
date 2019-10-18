@@ -10,13 +10,11 @@
   display: table;
   height: 250px;
 }
-
-.logo-container {
+.logo-space .logo-container {
   display: table-cell;
   vertical-align: middle;
 }
-
-.logo {
+.logo-space .logo {
   display: block;
   margin: auto;
   width: auto;
@@ -27,18 +25,12 @@
   background-color: #555;
 }
 
-.dropdown.menu > li.is-active > a {
-  background: transparent;
-  color: white;
-}
-
 .title-bar {
   background-color: #e68d10;
 }
 
 .menu-container ul {
   background-color: #555;
-  margin-top: 10px;
 }
 
 nav a {
@@ -68,17 +60,6 @@ nav .button:focus {
   background-color: #e68d10c9;
 }
 
-img {
-  width: 80px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: -16px;
-}
-
-.top-bar-left {
-  margin-top: 4px;
-}
-
 footer {
   background-color: #555;
   height: 50px;
@@ -89,29 +70,25 @@ footer .texto {
   line-height: 50px;
 }
 
-h4, p {
-  text-align: center;
-}
-
 .encabezado {
-  background-color: #555;
-  color: #e68d10;
-  border-radius: 5px;
-  width: auto;
+  margin: auto;
+  background: url("https://pmcvariety.files.wordpress.com/2016/03/dodgers-tv-rights.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  filter: brightness(0.6);
 }
 
-.titulo {
-  text-align: left;
-  line-height: 50px;
-  margin-left: 20px;
+h1 {
+  line-height: 350px;
+  color: white;
 }
 
-tr, td, th {
-  border: rgba(128, 128, 128, 0.226) solid 1px;
+img {
+  width: 800px;
+  height: 350px;
 }
 
-.reveal {
-  left: 26%;
-}
-
-/*# sourceMappingURL=categorias.css.map */
+/*# sourceMappingURL=art1.css.map */

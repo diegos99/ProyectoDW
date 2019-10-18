@@ -1,7 +1,7 @@
 $primary-color: #e68d10;
 $secondary-color: #555;
 $hover-button-color: #e68d10c9;
-
+$white: white;
 .barra {
   background-color: $primary-color;
   height: 30px;
@@ -59,7 +59,6 @@ nav {
     border-radius: 8px;
     background-color: $primary-color;
   }
-
   .button:hover,
   .button:focus {
     background-color: $hover-button-color;
@@ -76,67 +75,66 @@ footer {
   }
 }
 
-#login {
-  margin: auto;
-  width: 500px;
-  background-color: #cacaca;
-  border-radius: 7px;
-  padding: 16px;
+img {
+  width: 300px;
+  height: 160px;
+}
+h2 {
+  font-weight: bold;
+}
+h3 > a {
+  color: $secondary-color;
+}
+h3 > a:hover {
+  color: $primary-color;
 }
 
-.boton-foto-perfil {
-  border-radius: 100%;
-  background-color: transparent;
-}
-.boton-foto-perfil:hover {
-  background-color: transparent;
+/* Estilo para articulos */
+.marketing-site-content-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .marketing-site-content-section-img {
+    align-self: center;
+    flex: 1 0 100%;
+
+    img {
+      width: 100%;
+      height: 300px;
+    }
+
+    @media screen and (min-width: 40em) {
+      flex: 1 0 50%;
+    }
+  }
+
+  .marketing-site-content-section-block {
+    padding: 16px;
+    flex: 1 0 100%;
+    align-self: stretch;
+    background: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media screen and (min-width: 640px) {
+      flex: 1 0 50%;
+      padding: 32px;
+    }
+  }
 }
 
-a {
-  color: black;
+.marketing-site-content-section-block-header {
+  font-size: 24px;
 }
 
-.profile {
-  background-color: #cacaca;
-  border-radius: 10px;
-}
-.contenido {
-  margin: auto;
-}
-
-h4 {
-  text-align: center;
-}
-
-.profile-userpic img {
-  width: 200px;
-  height: 180px;
-  border-radius: 50%;
-}
-
-.profile-usertitle {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.profile-usertitle-name {
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 7px;
-}
-
-.profile-usertitle-type {
-  text-transform: uppercase;
-  color: black;
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-.profile-userbuttons {
-  text-align: center;  
-}
-.profile-userbuttons .button {
-  text-transform: uppercase;
-  font-size: 11px;
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
 }

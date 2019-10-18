@@ -25,6 +25,10 @@ angular.module('revista', ['ngRoute', 'ngCookies'])
                 templateUrl: 'html/usuarios.html',
                 controller: 'UsuariosController'
             })
+            .when("/articulos", {
+                templateUrl: 'html/crear_art.html',
+                controller: 'ArticleController'
+            })
             .otherwise("/home");
     }]);
 

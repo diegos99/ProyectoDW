@@ -1,0 +1,202 @@
+@charset "UTF-8";
+.barra {
+  background-color: #e68d10;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+}
+.logo-space .logo-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.logo-space .logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.top-bar {
+  background-color: #555;
+}
+
+.title-bar {
+  background-color: #e68d10;
+}
+
+.menu-container ul {
+  background-color: #555;
+}
+
+nav a {
+  color: white;
+}
+nav a:focus,
+nav a:hover {
+  color: white;
+}
+nav .submenu a {
+  color: #555;
+}
+nav li:hover,
+nav li:focus {
+  background-color: #e68d10;
+}
+nav .top-bar-right li:hover,
+nav .top-bar-right li:focus {
+  background-color: transparent;
+}
+nav .button {
+  border-radius: 8px;
+  background-color: #e68d10;
+}
+nav .button:hover,
+nav .button:focus {
+  background-color: #e68d10c9;
+}
+
+footer {
+  background-color: #555;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+footer .texto {
+  line-height: 50px;
+}
+
+.medium-11 img {
+  width: 600px;
+  height: 300px;
+}
+
+.articulos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-container {
+  margin-top: 24px;
+}
+.article-container .contenido {
+  margin-top: 32px;
+}
+.article-container .contenido .redes .redes-btn-curvo {
+  text-align: center;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  line-height: 32px;
+  border-radius: 27px;
+  transition: all 0.5s ease;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn:focus {
+  transform: rotate(360deg);
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook {
+  background: #3b5998;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn.facebook:focus {
+  color: #3b5998;
+  background: white;
+  border-color: #3b5998;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter {
+  background: #55acee;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn.twitter:focus {
+  color: #55acee;
+  background: white;
+  border-color: #55acee;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest {
+  background: #cb2027;
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest:before {
+  font-family: "FontAwesome";
+  content: "";
+}
+.article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest:hover, .article-container .contenido .redes .redes-btn-curvo .redes-btn.pinterest:focus {
+  color: #cb2027;
+  background: white;
+  border-color: #cb2027;
+}
+.article-container .contenido .contenido {
+  color: black;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.contenedor img {
+  width: 1400px;
+  height: 500px;
+  filter: brightness(0.6);
+}
+.contenedor h1 {
+  font-weight: 600;
+  color: white;
+}
+
+.fecha {
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.fecha p {
+  color: white;
+  font-weight: 600;
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.detalles a {
+  color: white;
+  font-weight: 50;
+}
+.detalles .autor {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.detalles .comentarios {
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=art2.css.map */

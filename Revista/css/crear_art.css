@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .barra {
   background-color: #e68d10;
   height: 30px;
@@ -68,7 +69,7 @@ nav .button:focus {
   background-color: #e68d10c9;
 }
 
-img {
+.foto-perfil {
   width: 80px;
   height: 50px;
   border-radius: 50%;
@@ -89,7 +90,8 @@ footer .texto {
   line-height: 50px;
 }
 
-h4, p {
+h4,
+p {
   text-align: center;
 }
 
@@ -103,10 +105,13 @@ h4, p {
 .titulo {
   text-align: left;
   line-height: 50px;
+  font-weight: 300;
   margin-left: 20px;
 }
 
-tr, td, th {
+tr,
+td,
+th {
   border: rgba(128, 128, 128, 0.226) solid 1px;
 }
 
@@ -114,4 +119,77 @@ tr, td, th {
   left: 26%;
 }
 
-/*# sourceMappingURL=categorias.css.map */
+/* Diseño para los templates */
+img {
+  width: 500px;
+  height: 500px;
+}
+
+h4 {
+  font-weight: 600;
+  color: #e68d10;
+}
+
+h6 {
+  color: #e68d10;
+}
+
+.product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.product-card button {
+  border-radius: 20px;
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 250px;
+  width: 25px;
+}
+
+/*# sourceMappingURL=crear_art.css.map */
