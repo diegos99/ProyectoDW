@@ -87,6 +87,21 @@ angular.module('revista').factory('UserService', ['$http', '$cookies', '$window'
                 callback(response);
             });
         }
+
+        factory.pay = function(data, callback) {
+            var req = {
+                method: 'POST',
+                url: 'http://localhost/revista_unis/api/usuario/pay.php',
+                header: {
+                    'Content-Type': 'application/json'
+                },
+                data: data
+            };
+
+            $http(req).success(function(response) {
+                callback(response);
+            });
+        }
     
         return factory;
 }]);

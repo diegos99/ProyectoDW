@@ -33,6 +33,10 @@ angular.module('revista', ['ngRoute', 'ngCookies'])
                 templateUrl: 'html/signin.html',
                 controller: 'SignInController'
             })
+            .when("/comprar", {
+                templateUrl: 'html/subscripcion.html',
+                controller: 'SubscriptionController'
+            })
             .otherwise("/home");
     }]);
 
