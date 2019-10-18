@@ -87,4 +87,52 @@ h3 > a:hover {
   color: #e68d10;
 }
 
+/* Estilo para articulos */
+.marketing-site-content-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.marketing-site-content-section .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.marketing-site-content-section .marketing-site-content-section-img {
+  align-self: center;
+  flex: 1 0 100%;
+}
+.marketing-site-content-section .marketing-site-content-section-img img {
+  width: 100%;
+  height: 300px;
+}
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-img {
+    flex: 1 0 50%;
+  }
+}
+.marketing-site-content-section .marketing-site-content-section-block {
+  padding: 16px;
+  flex: 1 0 100%;
+  align-self: stretch;
+  background: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (min-width: 640px) {
+  .marketing-site-content-section .marketing-site-content-section-block {
+    flex: 1 0 50%;
+    padding: 32px;
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
+}
+
 /*# sourceMappingURL=categ1.css.map */

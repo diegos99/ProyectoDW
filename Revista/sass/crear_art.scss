@@ -1,0 +1,192 @@
+$primary-color: #e68d10;
+$secondary-color: #555;
+$hover-button-color: #e68d10c9;
+
+.barra {
+  background-color: $primary-color;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.logo-space {
+  display: table;
+  height: 250px;
+}
+
+.logo-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.top-bar {
+  background-color: $secondary-color;
+}
+
+.dropdown.menu > li.is-active > a {
+  background: transparent;
+  color: white;
+}
+
+.title-bar {
+  background-color: $primary-color;
+}
+.menu-container ul {
+  background-color: $secondary-color;
+  margin-top: 10px;
+}
+nav {
+  a {
+    color: white;
+  }
+  a:focus,
+  a:hover {
+    color: white;
+  }
+  .submenu a {
+    color: $secondary-color;
+  }
+  li:hover,
+  li:focus {
+    background-color: $primary-color;
+  }
+  .top-bar-right {
+    li:hover,
+    li:focus {
+      background-color: transparent;
+    }
+  }
+  .button {
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: $hover-button-color;
+  }
+}
+
+.foto-perfil {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -16px;
+}
+
+.top-bar-left {
+  margin-top: 4px;
+}
+
+footer {
+  background-color: $secondary-color;
+  height: 50px;
+  text-align: center;
+  color: white;
+  .texto {
+    line-height: 50px;
+  }
+}
+
+h4,
+p {
+  text-align: center;
+}
+.encabezado {
+  background-color: $secondary-color; // rgb(24, 21, 21);
+  color: $primary-color;
+  border-radius: 5px;
+  width: auto;
+}
+.titulo {
+  text-align: left;
+  line-height: 50px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+tr,
+td,
+th {
+  border: rgba(128, 128, 128, 0.226) solid 1px;
+}
+
+.reveal {
+  left: 26%;
+}
+
+/* Diseño para los templates */
+img {
+  width: 500px;
+  height: 500px;
+}
+h4 {
+  font-weight: 600;
+  color: $primary-color;
+}
+h6 {
+  color: $primary-color;
+}
+.product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  button {
+    border-radius: 20px;
+  }
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 250px;
+  width: 25px;
+}

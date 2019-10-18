@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Administrar categorias</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Administrar categorías</title>
     <link rel="stylesheet" href="../css/foundation2.css" />
     <link rel="stylesheet" href="../css/foundation2.min.css" />
     <link rel="stylesheet" href="../css/categorias.css" />
@@ -58,7 +58,7 @@
           </div>
           <div class="top-bar-right menu-container">
             <ul class="menu">
-              <li id="hola">
+              <li>
                 <input type="search" class="menu" placeholder="Search" />
               </li>
               <li>
@@ -68,8 +68,7 @@
               </li>
               <li>
                 <a href="../html/Usuario.html">
-                  <img src="../imagenes/perfil.jpg" />
-                  <p>Diego Vega</p>
+                  <img src="../imagenes/perfil.jpg" />                  
                 </a>
               </li>
             </ul>
@@ -84,68 +83,66 @@
       <br />
       <br />
       <div class="row">
-        
-          <table>
-            <div class="row encabezado">
-              <h4 class="titulo">Categorías</h4>
-            </div>
-            <thead>
-              <tr>
-                <th>Id Categoría</th>
-                <th>Nombre de la categoría</th>
-                <th>Tipo de acceso</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>
-                  Categoria 1
-                </td>
-                <td>Premium</td>
-                <td>
-                  <button class="button warning" data-open="editar-cat">
-                    <i class="fi-pencil"></i>
-                  </button>
-                  <button class="button alert" data-open="del-cat">
-                    <i class="fi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>
-                  Categoria 2
-                </td>
-                <td>Gratuito</td>
-                <td>
-                  <button class="button warning" data-open="editar-cat">
-                    <i class="fi-pencil"></i>
-                  </button>
-                  <button class="button alert" data-open="del-cat">
-                    <i class="fi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  Categoria 3
-                </td>
-                <td>Premium</td>
-                <td>
-                  <button class="button warning" data-open="editar-cat">
-                    <i class="fi-pencil"></i>
-                  </button>
-                  <button class="button alert" data-open="del-cat">
-                    <i class="fi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        
+        <table>
+          <div class="row encabezado">
+            <h4 class="titulo">Categorías</h4>
+          </div>
+          <thead>
+            <tr>
+              <th>Id Categoría</th>
+              <th>Nombre de la categoría</th>
+              <th>Tipo de acceso</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Categoria 1
+              </td>
+              <td>Premium</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Categoria 2
+              </td>
+              <td>Gratuito</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Categoria 3
+              </td>
+              <td>Premium</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="row">
         <div class="large-7 columns">
@@ -255,6 +252,14 @@
         <button class="button alert">Eliminar</button>
       </p>
     </div>
+
+    <footer>
+      <div class="row">
+        <ul class="menu">
+          <li class="texto">Copyright © | Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>

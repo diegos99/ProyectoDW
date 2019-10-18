@@ -89,8 +89,10 @@ footer .texto {
   line-height: 50px;
 }
 
-h4, p {
-  text-align: center;
+/* Estilo de la tabla */
+h4,
+p {
+  text-align: justify;
 }
 
 .encabezado {
@@ -106,12 +108,45 @@ h4, p {
   margin-left: 20px;
 }
 
-tr, td, th {
+tr,
+td,
+th {
   border: rgba(128, 128, 128, 0.226) solid 1px;
 }
 
+tr:nth-child(odd) td {
+  background: #83828259;
+}
+
+tr:nth-child(even) td {
+  background: transparent;
+}
+
 .reveal {
+  border-radius: 10px;
   left: 26%;
 }
 
-/*# sourceMappingURL=categorias.css.map */
+/* Estilo para los botones */
+.button {
+  border-radius: 30px;
+}
+
+table .button {
+  border-radius: 30px;
+}
+table .button.success {
+  margin-right: -800px;
+}
+table .button.warning {
+  margin-left: -7px;
+}
+table .button.alert {
+  color: #fff;
+  margin-left: -12px;
+}
+table h5 {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=modulo-moderacion.css.map */

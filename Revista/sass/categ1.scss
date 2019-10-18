@@ -7,7 +7,7 @@ $white: white;
   height: 30px;
   color: white;
   text-align: center;
-  line-height: 30px;  
+  line-height: 30px;
 }
 
 .logo-space {
@@ -61,30 +61,80 @@ nav {
   }
   .button:hover,
   .button:focus {
-    background-color: $hover-button-color ;
+    background-color: $hover-button-color;
   }
 }
 
-footer{
+footer {
   background-color: $secondary-color;
   height: 50px;
-  text-align: center;  
-  color: white;  
-  .texto{
-    line-height: 50px;    
-  }    
+  text-align: center;
+  color: white;
+  .texto {
+    line-height: 50px;
+  }
 }
 
 img {
   width: 300px;
   height: 160px;
 }
-h2{
-    font-weight: bold;
+h2 {
+  font-weight: bold;
 }
-h3>a{
-    color: $secondary-color;
+h3 > a {
+  color: $secondary-color;
 }
-h3>a:hover{
-    color: $primary-color;
+h3 > a:hover {
+  color: $primary-color;
+}
+
+/* Estilo para articulos */
+.marketing-site-content-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .marketing-site-content-section-img {
+    align-self: center;
+    flex: 1 0 100%;
+
+    img {
+      width: 100%;
+      height: 300px;
+    }
+
+    @media screen and (min-width: 40em) {
+      flex: 1 0 50%;
+    }
+  }
+
+  .marketing-site-content-section-block {
+    padding: 16px;
+    flex: 1 0 100%;
+    align-self: stretch;
+    background: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media screen and (min-width: 640px) {
+      flex: 1 0 50%;
+      padding: 32px;
+    }
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
 }
