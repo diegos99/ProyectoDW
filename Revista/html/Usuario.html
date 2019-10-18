@@ -42,6 +42,10 @@
                 <button class="button" data-open="update-pass" ng-click="setUpdatePassword(usuario);">
                     Cambiar mi contraseña
                 </button>
+
+                <button class="button" data-open="update-info">
+                    Actualizar mi informacion
+                </button>
                 <button ng-click="logOut();" class="button alert">Cerrar sesion</button>
               </div>
             </div>
@@ -80,3 +84,42 @@
               </div>
         </div>    
     </div>
+
+    <div class="reveal row" id="update-info" data-reveal role="dialog">    
+        <div class="large-12 columns">
+            <h4 class="text-center">Edita tu informacion</h4>
+            <hr>
+            <p>
+              Llene los siguientes campos para editar tu informacion
+            </p>      
+            <div class="large-12 columns">
+                <form>        
+                  <label>Nombre del usuario
+                      <input ng-model="userToUpdate.nombre" type="text" placeholder="Nombre">
+                  </label>
+                  <label>Apellido del usuario
+                    <input ng-model="userToUpdate.apellido" type="text" placeholder="Apellido">
+                </label>
+                <label>Telefono del usuario
+                    <input ng-model="userToUpdate.telefono" type="text" placeholder="Telefono">
+                </label>
+                <label>Correo del usuario
+                    <input ng-model="userToUpdate.correo" type="text" placeholder="Correo">
+                </label>             
+                  <p>
+                      <button data-close ng-click="updateUser();" class="button expanded success">Actualizar</button>
+                  </p>                                
+                  </form> 
+                  <br />                                         
+              </div>   
+            <button
+              class="close-button"
+              data-close
+              aria-label="Close modal"
+              type="button"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>      
+        </div>       
+        
+      </div>

@@ -31,10 +31,23 @@ angular.module('revista').controller('UserController', ['$scope', '$window', '$c
             });
         }
 
+        $scope.updateUser = function () {
+            var toUpdate = {
+                id: $scope.userToUpdate.id_u,
+                nombre: $scope.userToUpdate.nombre,
+                apellido: $scope.userToUpdate.apellido,
+                telefono: $scope.userToUpdate.telefono,
+                correo: $scope.userToUpdate.correo,
+            }
+            UserService.updateUsuario(toUpdate, function (response) {
+                $cookies.putObject("loggedUser", JSON.stringify($scope.userToUpdate), {});
+                alert("Tu informacion se ha actualizado");
+            });
+        }
+
         $(document).foundation();
-
-
-
         isLogged();
+        var user = JSON.parse($cookies.getObject("loggedUser"));
+        $scope.userToUpdate = user;
     }
 ]);
