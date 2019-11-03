@@ -77,7 +77,9 @@ img {
 }
 
 .adds {
-  width: 100%;
+  width: auto;
+  display: block;
+  margin: auto;
 }
 
 /* Diseño para los art destacados */

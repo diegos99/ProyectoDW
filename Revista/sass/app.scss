@@ -7,7 +7,7 @@ $white: white;
   height: 30px;
   color: white;
   text-align: center;
-  line-height: 30px;  
+  line-height: 30px;
 }
 
 .logo-space {
@@ -61,18 +61,18 @@ nav {
   }
   .button:hover,
   .button:focus {
-    background-color: $hover-button-color ;
+    background-color: $hover-button-color;
   }
 }
 
-footer{
+footer {
   background-color: $secondary-color;
   height: 50px;
-  text-align: center;  
-  color: white;  
-  .texto{
-    line-height: 50px;    
-  }    
+  text-align: center;
+  color: white;
+  .texto {
+    line-height: 50px;
+  }
 }
 
 img {
@@ -80,8 +80,11 @@ img {
   height: 160px;
 }
 
-.adds{
-  width: 100%;
+.adds {
+  width: auto;
+  //estas dos lineas de codigo centran la imagen
+  display: block;
+  margin: auto;
 }
 
 /* Diseño para los art destacados */
@@ -89,7 +92,7 @@ $image-hover-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 $image-hover-transition-delay: 0.25s;
 $image-hover-banner-width: 200px;
 $image-hover-banner-topspace: 50px;
-$image-hover-banner-bg: rgba($primary-color ,0.8);
+$image-hover-banner-bg: rgba($primary-color, 0.8);
 $image-hover-icon-size: 24px;
 
 .image-hover {
@@ -139,7 +142,7 @@ $image-hover-icon-size: 24px;
         display: block;
         opacity: 0;
         position: absolute;
-        text-align: center;        
+        text-align: center;
         overflow-wrap: break-word; // sirve para ajustar el texto al elemento y no cortar el texto
         width: 100%;
         transition: $image-hover-transition;
@@ -163,7 +166,6 @@ $image-hover-icon-size: 24px;
     z-index: 10;
   }
 }
-
 
 /* Diseño de la lista de cat y sub cat */
 $expand-column-transition: all 0.5s ease-in-out;
@@ -212,7 +214,6 @@ $white: #fff;
   }
 }
 
-
 .expand-column-wrapper .cell {
   &:nth-of-type(1) {
     background: url("https://corbuse.edu.mx/blog/wp-content/uploads/2019/02/CORBUS%C3%89-como-emprender-un-negocio-de-comida-ser-chef-es-el-primer-paso.jpg")
@@ -229,7 +230,7 @@ $white: #fff;
     background-size: cover;
   }
 
-  &:nth-of-type(3) { 
+  &:nth-of-type(3) {
     background: url("https://reddigitalusa.com/wp-content/uploads/2017/11/Fondox.net_usain-bolt-en-los-juegos_1680x1050.jpg")
       center center no-repeat;
     height: 100%;
@@ -251,61 +252,58 @@ $white: #fff;
   }
 }
 
-
-
 /* Diseño de ultimos 10 art */
 .product-card {
-    background-color: #fefefe;
-    border: 1px solid #e6e6e6;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .product-card-thumbnail {
-    display: block;
-    position: relative;
-  }
-  
-  .product-card-title {
-    font-family: 'Open sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.45rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-  
-  .product-card-desc {
-    color: #8a8a8a;
-    display: block;
-    font-family: 'Open sans', sans-serif;
-    font-size: 0.85rem;
-  }
-  
-  .product-card-price {
-    color: #3e3e3e;
-    display: inline-block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: 0.8rem;
-  }
-  
-  .product-card-sale {
-    color: #cacaca;
-    display: inline-block;
-    font-size: 0.85rem;
-    margin-left: 0.3rem;
-    text-decoration: line-through;
-  }
-  
-  .product-card-colors {
-    display: block;
-    margin-top: 0.8rem;
-  }
-  
-  .product-card-color-option {
-    display: inline-block;
-    height: 250px;
-    width: 25px;
-  }
-  
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 250px;
+  width: 25px;
+}
