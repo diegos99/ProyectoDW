@@ -104,4 +104,57 @@ a:focus {
   background-color: #e68d10c9;
 }
 
+/* Estilo para los botones */
+.button-hover-reveal-wrapper {
+  overflow: hidden;
+  border: 2px solid #e68d10;
+  border-radius: 5000px;
+  text-align: center;
+  width: 40%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.button-hover-reveal-wrapper:hover {
+  border: none;
+  background-color: #e68d10;
+  transition: background-color 0.5s ease;
+}
+.button-hover-reveal-wrapper:hover .button-hover-reveal {
+  display: block;
+  font-size: 16px;
+  padding: 22px;
+}
+.button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button-hover-reveal-wrapper:hover label {
+  display: none;
+}
+.button-hover-reveal-wrapper .button-hover-reveal {
+  display: none;
+  color: white;
+  width: 50%;
+  z-index: 1;
+}
+.button-hover-reveal-wrapper .opcion {
+  color: white;
+}
+.button-hover-reveal-wrapper label {
+  padding: 16px;
+  color: #e68d10;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tabs-title > a:hover {
+  background: transparent;
+}
+
+.tabs-title > a[aria-selected=true] {
+  background: transparent;
+}
+
 /*# sourceMappingURL=login.css.map */

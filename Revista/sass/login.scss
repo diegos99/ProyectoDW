@@ -95,15 +95,75 @@ a {
   color: black;
 }
 a:hover,
-a:focus{
+a:focus {
   color: $primary-color;
 }
 .button {
-    border-radius: 8px;
+  border-radius: 8px;
+  background-color: $primary-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $hover-button-color;
+}
+
+/* Estilo para los botones */
+.button-hover-reveal-wrapper {
+  overflow: hidden;
+  border: 2px solid $primary-color;
+  border-radius: 5000px;
+  text-align: center;
+  width: 40%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  &:hover {
+    border: none;
     background-color: $primary-color;
+    transition: background-color 0.5s ease;
+
+    .button-hover-reveal {
+      display: block;
+      font-size: 16px;
+      padding: 22px;
+
+      &:hover {
+        transition: background-color 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    label {
+      display: none;
+    }
   }
 
-  .button:hover,
-  .button:focus {
-    background-color: $hover-button-color;
+  .button-hover-reveal {
+    display: none;
+    color: white;
+    width: 50%;
+    z-index: 1;
   }
+
+  .opcion {
+    color: white;
+  }
+
+  label {
+    padding: 16px;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.tabs-title > a:hover {
+  background: transparent;
+}
+.tabs-title > a[aria-selected=true] {
+  background: transparent;
+}
+

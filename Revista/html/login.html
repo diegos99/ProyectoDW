@@ -17,7 +17,7 @@
     <header>
       <div class="barra">
         <strong>
-            <i>"La revista número uno en Guatemala"</i>
+          <i>"La revista número uno en Guatemala"</i>
         </strong>
       </div>
 
@@ -75,34 +75,102 @@
         </div>
       </nav>
     </header>
+
     <section>
       <br />
       <br />
       <br />
       <br />
       <br />
-      <div class="row" id="login">
-        <div class="large-12 columns">
-          <form>
-            <h4 class="text-center">Iniciar sesión</h4>
-            <label
-              >Email
-              <input type="email" placeholder="somebody@example.com" />
-            </label>
-            <label
-              >Password
-              <input type="password" placeholder="Password" />
-            </label>
-            <input id="show-password" type="checkbox" />
-            <label for="show-password">Mostrar contraseña</label>
-            <a href="../html/Usuario.html">
-              <input type="button" class="button expanded" value="Log in" />
-            </a>
-            <p class="text-center">
-              <a href="#">Crear una cuenta</a>
-            </p>
-          </form>
-          <br />
+
+      <div class="button-hover-reveal-wrapper" data-tabs id="example-tabs">
+        <label>Opciones</label>
+        <div class="tabs-title is-active button-hover-reveal">
+          <a href="#panel1" class="opcion">Sign Up</a>
+        </div>
+        <div class="tabs-title button-hover-reveal">
+          <a href="#panel2" class="opcion">Log In</a>
+        </div>
+      </div>
+      <div data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <!-- Este contiene el Sign Up -->
+          <div class="row" id="login">
+            <div class="large-12 columns">
+              <form>
+                <h4 class="text-center">Registrarse</h4>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label
+                      >Nombres
+                      <input type="text" placeholder="Nombres" />
+                    </label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label
+                      >Apellidos
+                      <input type="text" placeholder="Apellidos" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 column">
+                    <label
+                      >Email
+                      <input type="email" placeholder="somebody@example.com" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 column">
+                    <label
+                      >Password
+                      <input type="password" placeholder="Password" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 column">
+                    <a href="#0">
+                      <input
+                        type="button"
+                        class="button expanded"
+                        value="Registrarme"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </form>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <!-- Este contiene el Log In -->
+          <div class="row" id="login">
+            <div class="large-12 columns">
+              <form>
+                <h4 class="text-center">Iniciar sesión</h4>
+                <label
+                  >Email
+                  <input type="email" placeholder="somebody@example.com" />
+                </label>
+                <label
+                  >Password
+                  <input type="password" placeholder="Password" />
+                </label>
+                <input id="show-password" type="checkbox" />
+                <label for="show-password">Mostrar contraseña</label>
+                <a href="../html/Usuario.html">
+                  <input type="button" class="button expanded" value="Log in" />
+                </a>
+                <p class="text-center">
+                  <a href="#">Crear una cuenta</a>
+                </p>
+              </form>
+              <br />
+            </div>
+          </div>
         </div>
       </div>
       <br />
