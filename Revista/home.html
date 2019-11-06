@@ -9,6 +9,69 @@
     <link rel="stylesheet" href="css/foundation2.min.css" />
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <style>
+      /* Este style contiene el diseño de la seccion de categ y sub-categ */      
+      .expand-column-wrapper {
+        height: 100%;
+        max-wdtih: 1000px;
+      }
+      .expand-column-wrapper .cell {
+        padding: 1rem;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .expand-column-wrapper .cell:hover {
+        flex-basis: 40%;
+      }
+      .expand-column-wrapper .cell:hover .expand-column-content {
+        opacity: 1;
+      }
+      .expand-column-wrapper .expand-column-content {
+        color: #fff;
+        font-weight: bold;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      @media screen and (max-width: 39.9375em) {
+        .expand-column-wrapper {
+          flex-direction: column;
+        }
+      }
+
+      .expand-column-wrapper .cell:nth-of-type(1) {
+        background: url("https://corbuse.edu.mx/blog/wp-content/uploads/2019/02/CORBUS%C3%89-como-emprender-un-negocio-de-comida-ser-chef-es-el-primer-paso.jpg")
+          center center no-repeat;
+        height: 100%;
+        background-size: cover;
+      }
+      .expand-column-wrapper .cell:nth-of-type(2) {
+        background: transparent
+          url("https://www.perspectiva.com.gt/wp-content/uploads/guia-de-regalos-para-un-papa-con-estilo-saul-saul-e-mendez-suscripcion-al-gym.jpg")
+          center center no-repeat;
+        height: 100%;
+        background-size: cover;
+      }
+      .expand-column-wrapper .cell:nth-of-type(3) {
+        background: url("https://reddigitalusa.com/wp-content/uploads/2017/11/Fondox.net_usain-bolt-en-los-juegos_1680x1050.jpg")
+          center center no-repeat;
+        height: 100%;
+        background-size: cover;
+      }
+      .expand-column-wrapper .cell:nth-of-type(4) {
+        background: url("https://img.cancaonova.com/cnimages/canais/uploads/sites/15/2018/11/Casa-do-m%C3%BAsico-F%C3%A9-em-Deus-e-p%C3%A9-na-estrada.png")
+          center center no-repeat;
+        height: 100%;
+        background-size: cover;
+      }
+      .expand-column-wrapper .cell:nth-of-type(5) {
+        background: url("https://ultra106five.com/wp-content/uploads/2019/07/Shane-Michael-Hutton-Public-speaking.jpg")
+          center center no-repeat;
+        height: 100%;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <header>
