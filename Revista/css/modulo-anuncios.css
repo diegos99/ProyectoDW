@@ -68,7 +68,7 @@ nav .button:focus {
   background-color: #e68d10c9;
 }
 
-img {
+a > img {
   width: 80px;
   height: 50px;
   border-radius: 50%;
@@ -87,6 +87,59 @@ footer {
 }
 footer .texto {
   line-height: 50px;
+}
+
+/* Estilo para el boton y formulario de creacion de anuncio */
+h3 {
+  text-align: center;
+}
+
+.button {
+  border-radius: 20px;
+}
+
+.dropdown-pane {
+  border-radius: 20px;
+  width: 500px;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+[type=number],
+[type=text],
+[type=url],
+[type=date] {
+  border-radius: 20px;
+}
+
+.crear {
+  background-color: #e68d10;
+}
+
+/* Estilo para  el listado de anuncios*/
+.anuncio-contenido {
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.foto-anuncio {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+h4 > i {
+  color: #555;
+}
+
+h4 > i:hover {
+  color: #e68d10;
+}
+
+.nom-anuncio {
+  text-align: left;
 }
 
 /*# sourceMappingURL=modulo-anuncios.css.map */

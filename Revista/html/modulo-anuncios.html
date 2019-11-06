@@ -78,7 +78,216 @@
     </header>
 
     <section>
-        
+      <br />
+      <h3>Módulo de anuncios</h3>
+      <hr />
+      <!-- Boton para crear anuncios -->
+      <div class="row">
+        <button
+          class="button success"
+          type="button"
+          data-toggle="example-dropdown"
+        >
+          Nuevo anuncio
+        </button>
+        <div
+          class="dropdown-pane  success"
+          id="example-dropdown"
+          data-dropdown
+          data-auto-focus="true"
+        >
+          <h4>Creación de anuncio</h4>
+          <form>
+            <div class="grid-container">
+              <div class="row">
+                <div class="large-6 column">
+                  <label>
+                    <h6>Id anuncio</h6>
+                    <input type="number" name="numero" placeholder="000" />
+                  </label>
+                </div>
+                <div class="large-6 column">
+                  <label>
+                    <h6>Nombre del anuncio</h6>
+                    <input type="text" placeholder="Nombre del anuncio" />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 column">
+                  <label>
+                    <h6>Empresa</h6>
+                    <input
+                      type="text"
+                      name="direccion"
+                      placeholder="Nombre de la empresa"
+                    />
+                  </label>
+                </div>
+                <div class="large-6 column">
+                  <label>
+                    <h6>Link del anuncio</h6>
+                    <input
+                      type="url"
+                      name="direccion"
+                      placeholder="https://www.ejemplo.com/"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-5 column">
+                  <label>
+                    <h6>Fecha</h6>
+                    <input type="date" name="fecha" size="20" />
+                  </label>
+                </div>
+                <div class="large-7 column">
+                  <label>
+                    <h6>Imagen del anuncio</h6>
+                    <input type="file" name="archivo" value="image/*" />
+                  </label>
+                </div>
+              </div>
+              <div>
+                <button class="button crear">
+                  Crear
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Lista de anuncios -->
+      <div class="row">
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://eduardoiberico.files.wordpress.com/2009/02/afiche-pantene3.jpg?w=640&h=453"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://www.reencauchadora-yasani.com/wp-content/uploads/2018/03/Banner-publicidad-1.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://i.ytimg.com/vi/S_z8chj4M-A/maxresdefault.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://definicion.de/wp-content/uploads/2016/10/Anunciopublicitario.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://prowebimages.blob.core.windows.net/guatemala/0000980_sopa-de-tortilla-gratis-en-los-cebollines_600.jpeg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://rutagourmet.do/wp-content/uploads/2015/08/Hony-Estrella.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
     </section>
 
     <footer>
