@@ -203,47 +203,4 @@ footer .texto {
   font-size: 3.125rem;
 }
 
-/* Estilo para los comentarios */
-.comment-section-container {
-  background-color: #fefefe;
-  padding: 1rem;
-}
-.comment-section-container h3 {
-  font-weight: 600;
-  color: #e68d10;
-}
-
-.comment-section-author {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.comment-section-author .comment-section-name {
-  margin-left: 1rem;
-}
-.comment-section-author .comment-section-name h5 {
-  font-size: 20px;
-}
-.comment-section-author .comment-section-name p {
-  font-size: 15px;
-}
-
-.comment-section-author .comment-section-name p {
-  margin-bottom: 0;
-}
-
-.comment-section-box {
-  background-color: #e6e6e6;
-  padding: 1rem;
-}
-
-.comment-section-text p {
-  font-size: 16px;
-}
-
 /*# sourceMappingURL=art1.css.map */
