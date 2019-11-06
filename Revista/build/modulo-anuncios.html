@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modulo de anuncios</title>
+    <link rel="stylesheet" href="../css/foundation2.css" />
+    <link rel="stylesheet" href="../css/foundation2.min.css" />
+    <link rel="stylesheet" href="../css/modulo-anuncios.css" />
+    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css" />
+  </head>
+  <body>
+    <header>
+      <div class="barra">
+        <strong>
+          <i>"La revista número uno en Guatemala"</i>
+        </strong>
+      </div>
+
+      <div class="row logo-space">
+        <div class="logo-container">
+          <img src="../imagenes/logo.png" class="logo" />
+        </div>
+      </div>
+
+      <div
+        class="title-bar"
+        data-responsive-toggle="responsive-menu"
+        data-hide-for="medium"
+      >
+        <button
+          class="menu-icon"
+          type="button"
+          data-toggle="responsive-menu"
+        ></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <nav class="top-bar" id="responsive-menu">
+        <div class="row">
+          <div class="top-bar-left menu-container">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="../home.html">Inicio</a></li>
+              <li>
+                <a href="#0">Categoria 1</a>
+              </li>
+              <li class="has-submenu">
+                <a href="#0">Categoria2</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#0">Sub cat 1</a></li>
+                  <li><a href="#0">Sub cat 2</a></li>
+                  <li><a href="#0">Sub cat 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#0">Categoria 3</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right menu-container">
+            <ul class="menu">
+              <li>
+                <input type="search" class="menu" placeholder="Search" />
+              </li>
+              <li>
+                <button type="button" class="button">
+                  <i class="fa-money">Search</i>
+                </button>
+              </li>
+              <li>
+                <a href="../html/Usuario.html">
+                  <img src="../imagenes/perfil.jpg" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <br />
+      <h3>Módulo de anuncios</h3>
+      <hr />
+      <!-- Boton para crear anuncios -->
+      <div class="row">
+        <button
+          class="button success"
+          type="button"
+          data-toggle="example-dropdown"
+        >
+          Nuevo anuncio
+        </button>
+        <div
+          class="dropdown-pane  success"
+          id="example-dropdown"
+          data-dropdown
+          data-auto-focus="true"
+        >
+          <h4>Creación de anuncio</h4>
+          <form>
+            <div class="grid-container">
+              <div class="row">
+                <div class="large-6 column">
+                  <label>
+                    <h6>Id anuncio</h6>
+                    <input type="number" name="numero" placeholder="000" />
+                  </label>
+                </div>
+                <div class="large-6 column">
+                  <label>
+                    <h6>Nombre del anuncio</h6>
+                    <input type="text" placeholder="Nombre del anuncio" />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 column">
+                  <label>
+                    <h6>Empresa</h6>
+                    <input
+                      type="text"
+                      name="direccion"
+                      placeholder="Nombre de la empresa"
+                    />
+                  </label>
+                </div>
+                <div class="large-6 column">
+                  <label>
+                    <h6>Link del anuncio</h6>
+                    <input
+                      type="url"
+                      name="direccion"
+                      placeholder="https://www.ejemplo.com/"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-5 column">
+                  <label>
+                    <h6>Fecha</h6>
+                    <input type="date" name="fecha" size="20" />
+                  </label>
+                </div>
+                <div class="large-7 column">
+                  <label>
+                    <h6>Imagen del anuncio</h6>
+                    <input type="file" name="archivo" value="image/*" />
+                  </label>
+                </div>
+              </div>
+              <div>
+                <button class="button crear">
+                  Crear
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Lista de anuncios -->
+      <div class="row">
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://eduardoiberico.files.wordpress.com/2009/02/afiche-pantene3.jpg?w=640&h=453"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://www.reencauchadora-yasani.com/wp-content/uploads/2018/03/Banner-publicidad-1.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://i.ytimg.com/vi/S_z8chj4M-A/maxresdefault.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://definicion.de/wp-content/uploads/2016/10/Anunciopublicitario.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://prowebimages.blob.core.windows.net/guatemala/0000980_sopa-de-tortilla-gratis-en-los-cebollines_600.jpeg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="large-6 column">
+          <div class="large-7 columns">
+            <p>
+              <img
+                class="foto-anuncio"
+                src="https://rutagourmet.do/wp-content/uploads/2015/08/Hony-Estrella.jpg"
+              />
+            </p>
+          </div>
+          <div class="large-5 columns anuncio-contenido">
+            <h4 class="nom-anuncio">
+              <i>Nombre del anuncio</i>
+            </h4>
+            <span>Empresa:<i class="autor"> Pepsi</i></span>
+            <br />
+            <span><i class="autor">Fecha: 18/10/2019</i></span>
+            <p>
+              <a href="#0">www.example.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <footer>
+      <div class="row">
+        <ul class="menu">
+          <li class="texto">Copyright © | Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  <script type="text/javascript" src="app-o.js"></script></body>
+</html>

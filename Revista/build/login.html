@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link
+      rel="stylesheet"
+      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="barra">
+        <strong>
+          <i>"La revista número uno en Guatemala"</i>
+        </strong>
+      </div>
+
+      <div class="row logo-space">
+        <div class="logo-container">
+          <img src="../imagenes/logo.png" class="logo" />
+        </div>
+      </div>
+
+      <div
+        class="title-bar"
+        data-responsive-toggle="responsive-menu"
+        data-hide-for="medium"
+      >
+        <button
+          class="menu-icon"
+          type="button"
+          data-toggle="responsive-menu"
+        ></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <nav class="top-bar" id="responsive-menu">
+        <div class="row">
+          <div class="top-bar-left menu-container">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="../home.html">Inicio</a></li>
+              <li>
+                <a href="#0">Categoria 1</a>
+              </li>
+              <li class="has-submenu">
+                <a href="#0">Categoria2</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#0">Sub cat 1</a></li>
+                  <li><a href="#0">Sub cat 2</a></li>
+                  <li><a href="#0">Sub cat 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#0">Categoria 3</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right menu-container">
+            <ul class="menu">
+              <li id="hola">
+                <input type="search" class="menu" placeholder="Search" />
+              </li>
+              <li>
+                <button type="button" class="button">
+                  <i class="fa-money">Search</i>
+                </button>
+              </li>
+              <li><a href="../html/login.html">Log In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div class="button-hover-reveal-wrapper" data-tabs id="example-tabs">
+        <label>Opciones</label>
+        <div class="tabs-title is-active button-hover-reveal">
+          <a href="#panel1" class="opcion">Sign Up</a>
+        </div>
+        <div class="tabs-title button-hover-reveal">
+          <a href="#panel2" class="opcion">Log In</a>
+        </div>
+      </div>
+      <div data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <!-- Este contiene el Sign Up -->
+          <div class="row" id="login">
+            <div class="large-12 columns">
+              <form>
+                <h4 class="text-center">Registrarse</h4>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label
+                      >Nombres
+                      <input type="text" placeholder="Nombres" />
+                    </label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label
+                      >Apellidos
+                      <input type="text" placeholder="Apellidos" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 column">
+                    <label
+                      >Email
+                      <input type="email" placeholder="somebody@example.com" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 column">
+                    <label
+                      >Password
+                      <input type="password" placeholder="Password" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 column">
+                    <a href="#0">
+                      <input
+                        type="button"
+                        class="button expanded"
+                        value="Registrarme"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </form>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <!-- Este contiene el Log In -->
+          <div class="row" id="login">
+            <div class="large-12 columns">
+              <form>
+                <h4 class="text-center">Iniciar sesión</h4>
+                <label
+                  >Email
+                  <input type="email" placeholder="somebody@example.com" />
+                </label>
+                <label
+                  >Password
+                  <input type="password" placeholder="Password" />
+                </label>
+                <input id="show-password" type="checkbox" />
+                <label for="show-password">Mostrar contraseña</label>
+                <a href="../html/Usuario.html">
+                  <input type="button" class="button expanded" value="Log in" />
+                </a>
+                <p class="text-center">
+                  <a href="#">Crear una cuenta</a>
+                </p>
+              </form>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+
+    <footer>
+      <div class="row">
+        <ul class="menu">
+          <li class="texto">Copyright © | Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  <script type="text/javascript" src="app-o.js"></script></body>
+</html>

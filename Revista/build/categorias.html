@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Administrar categorías</title>
+    <link rel="stylesheet" href="../css/foundation2.css" />
+    <link rel="stylesheet" href="../css/foundation2.min.css" />
+    <link rel="stylesheet" href="../css/categorias.css" />
+    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css" />
+  </head>
+  <body>
+    <header>
+      <div class="barra">
+        <strong>
+          <i>"La revista número uno en Guatemala"</i>
+        </strong>
+      </div>
+
+      <div class="row logo-space">
+        <div class="logo-container">
+          <img src="../imagenes/logo.png" class="logo" />
+        </div>
+      </div>
+
+      <div
+        class="title-bar"
+        data-responsive-toggle="responsive-menu"
+        data-hide-for="medium"
+      >
+        <button
+          class="menu-icon"
+          type="button"
+          data-toggle="responsive-menu"
+        ></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <nav class="top-bar" id="responsive-menu">
+        <div class="row">
+          <div class="top-bar-left menu-container">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="../home.html">Inicio</a></li>
+              <li>
+                <a href="#0">Categoria 1</a>
+              </li>
+              <li class="has-submenu">
+                <a href="#0">Categoria2</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#0">Sub cat 1</a></li>
+                  <li><a href="#0">Sub cat 2</a></li>
+                  <li><a href="#0">Sub cat 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#0">Categoria 3</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right menu-container">
+            <ul class="menu">
+              <li>
+                <input type="search" class="menu" placeholder="Search" />
+              </li>
+              <li>
+                <button type="button" class="button">
+                  <i class="fa-money">Search</i>
+                </button>
+              </li>
+              <li>
+                <a href="../html/Usuario.html">
+                  <img src="../imagenes/perfil.jpg" />                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="row">
+        <table>
+          <div class="row encabezado">
+            <h4 class="titulo">Categorías</h4>
+          </div>
+          <thead>
+            <tr>
+              <th>Id Categoría</th>
+              <th>Nombre de la categoría</th>
+              <th>Tipo de acceso</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Categoria 1
+              </td>
+              <td>Premium</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Categoria 2
+              </td>
+              <td>Gratuito</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Categoria 3
+              </td>
+              <td>Premium</td>
+              <td>
+                <button class="button warning" data-open="editar-cat">
+                  <i class="fi-pencil"></i>
+                </button>
+                <button class="button alert" data-open="del-cat">
+                  <i class="fi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <div class="large-7 columns">
+          <button class="button success" data-open="crear-cat">
+            <i class="fi-plus"> Crear nueva categoría</i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="reveal row" id="editar-cat" data-reveal>
+      <div class="large-12 columns">
+        <h4 class="text-center">Editor de categoría</h4>
+        <hr />
+        <p>
+          Llene los siguientes campos para editar la categoría seleccionada
+        </p>
+        <div class="large-12 columns">
+          <form>
+            <label
+              >ID Categoría
+              <input type="number" placeholder="000" />
+            </label>
+            <label
+              >Nombre de la categoría
+              <input type="text" placeholder="Categoria" />
+            </label>
+            <label
+              >Tipos de acceso
+              <select>
+                <option value="premium">Premium</option>
+                <option value="gratuito">Gratuito</option>
+              </select>
+            </label>
+            <p>
+              <input
+                type="submit"
+                class="button expanded warning"
+                value="Actualizar"
+              />
+            </p>
+          </form>
+          <br />
+        </div>
+        <button
+          class="close-button"
+          data-close
+          aria-label="Close modal"
+          type="button"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="reveal" id="crear-cat" data-reveal>
+      <h4 class="text-center">Crear nueva categoría</h4>
+      <hr />
+      <p>
+        Llene los siguientes campos para crear una nueva categoría
+      </p>
+      <div class="large-12 columns">
+        <form>
+          <label
+            >ID Categoría
+            <input type="number" placeholder="000" />
+          </label>
+          <label
+            >Nombre de la categoría
+            <input type="text" placeholder="Categoria" />
+          </label>
+          <label
+            >Tipos de acceso
+            <select>
+              <option value="premium">Premium</option>
+              <option value="gratuito">Gratuito</option>
+            </select>
+          </label>
+          <p>
+            <input
+              type="submit"
+              class="button expanded success"
+              value="Insertar"
+            />
+          </p>
+        </form>
+        <br />
+      </div>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="reveal" id="del-cat" data-reveal>
+      <h4 class="text-center">Eliminar categoría</h4>
+      <hr />
+      <p>
+        ¿Está seguro que desea eliminar esta categoría?
+      </p>
+      <p>
+        <button class="button" data-close aria-label="Close modal">
+          Cancelar
+        </button>
+        <button class="button alert">Eliminar</button>
+      </p>
+    </div>
+
+    <footer>
+      <div class="row">
+        <ul class="menu">
+          <li class="texto">Copyright © | Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  <script type="text/javascript" src="app-o.js"></script></body>
+</html>
