@@ -89,6 +89,11 @@ module.exports = {
             filename: 'Usuario.html',
             template: './html/Usuario.html',
             chunks: ['app']          
-        })    
+        })    ,
+        new HtmlWebpackPlugin({
+            filename: 'about-us.html',
+            template: './html/about-us.html',
+            chunks: ['app']          
+        }) 
     ]    
 }
