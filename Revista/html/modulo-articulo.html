@@ -84,8 +84,9 @@
         <hr />
         <p>
           En esta página usted podrá revisar artículos creados por los autores
-          de la revista. Si el artículo es apropiado, puede publicarlo directamente presionando el boton verde.
-          De lo contrario, puede enviar un correo electronico presionando el botón naranja.
+          de la revista. Si el artículo es apropiado, puede publicarlo
+          directamente presionando el boton verde. De lo contrario, puede enviar
+          un correo electronico presionando el botón rojo.
         </p>
       </div>
     </section>
@@ -99,7 +100,7 @@
           <thead>
             <tr>
               <th>Id Artículo</th>
-              <th>Ver artículo</th>              
+              <th>Ver artículo</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -107,90 +108,160 @@
             <tr>
               <td>1</td>
               <td>
-                Pedro Pérez
-              </td>                            
+                <button class="button warning" data-open="ver-art">
+                  <i class="fi-eye"></i>
+                </button>
+              </td>
               <td>
                 <div class="row">
-                  <div class="large-4 column">
+                  <div class="large-3 column">
                     <a href="#0"
-                      ><button class="button success">
-                        <i class="fi-link"></i></button
+                      ><button class="button success" data-open="aprobar">
+                        <i class="fi-check"></i></button
                     ></a>
                   </div>
-                  <div class="large-4 column">
-                    <button class="button warning" data-open="censurar">
-                      <i class="fi-flag"></i>
-                    </button>
-                  </div>
-                  <div class="large-4 column">
-                    <button class="button alert" data-open="ignorar">
-                      <i class="fi-x-circle"></i>
+                  <div class="large-9 column">
+                    <button class="button alert" data-open="declinar">
+                      <i class="fi-mail"></i>
                     </button>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-                    <td>1</td>
-                    <td>
-                      Pedro Pérez
-                    </td>                            
-                    <td>
-                      <div class="row">
-                        <div class="column">
-                          <a href="#0"
-                            ><button class="button success">
-                              <i class="fi-link"></i></button
-                          ></a>
-                        </div>
-                        <div class="large-4 column">
-                          <button class="button warning" data-open="censurar">
-                            <i class="fi-flag"></i>
-                          </button>
-                        </div>
-                        <div class="large-4 column">
-                          <button class="button alert" data-open="ignorar">
-                            <i class="fi-x-circle"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                        <td>1</td>
-                        <td>
-                          Pedro Pérez
-                        </td>                            
-                        <td>
-                          <div class="row">
-                            <div class="large-4 column">
-                              <a href="#0"
-                                ><button class="button success">
-                                  <i class="fi-link"></i></button
-                              ></a>
-                            </div>
-                            <div class="large-4 column">
-                              <button class="button warning" data-open="censurar">
-                                <i class="fi-flag"></i>
-                              </button>
-                            </div>
-                            <div class="large-4 column">
-                              <button class="button alert" data-open="ignorar">
-                                <i class="fi-x-circle"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
+              <td>2</td>
+              <td>
+                <button class="button warning" data-open="ver-art">
+                  <i class="fi-eye"></i>
+                </button>
+              </td>
+              <td>
+                <div class="row">
+                  <div class="large-3 column">
+                    <a href="#0"
+                      ><button class="button success" data-open="aprobar">
+                        <i class="fi-check"></i></button
+                    ></a>
+                  </div>
+                  <div class="large-9 column">
+                    <button class="button alert" data-open="declinar">
+                      <i class="fi-mail"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <button class="button warning" data-open="ver-art">
+                  <i class="fi-eye"></i>
+                </button>
+              </td>
+              <td>
+                <div class="row">
+                  <div class="large-3 column">
+                    <a href="#0"
+                      ><button class="button success" data-open="aprobar">
+                        <i class="fi-check"></i></button
+                    ></a>
+                  </div>
+                  <div class="large-9 column">
+                    <button class="button alert" data-open="declinar">
+                      <i class="fi-mail"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <div class="reveal row callout warning" id="censurar" data-reveal>
+    <!-- MODALES -->
+    <div class="reveal" id="ver-art" data-reveal>
+      <h4>Artículo</h4>
+      <div class="row large-12">
+        <ul>
+          <li>
+            Autor:
+            <p>Pedrito perez</p>
+          </li>
+          <li>
+            Fecha
+            <p>27/07/2019</p>
+          </li>
+          <li>
+            Título del art.
+            <p>"TITULO DEL ART"</p>
+          </li>
+          <li>
+            Categoría
+            <p>Moda</p>
+          </li>
+          <li>
+            Sub. Cat
+            <p>Sub-Categoria-1</p>
+          </li>
+          <li>
+            Tipo de acceso
+            <p>Gratuito</p>
+          </li>
+          <li>
+            Contenido del art
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a
+              pharetra augue. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Harum facilis tenetur a voluptatibus quia
+              deserunt.
+            </p>
+          </li>
+          <li>
+            Imágenes
+            <br /><br />
+            <div class="row">
+              <div class="large-6 column">
+                <img
+                  src="https://pmcvariety.files.wordpress.com/2016/03/dodgers-tv-rights.jpg"
+                  class="imgs-arts"
+                />
+              </div>
+              <div class="large-6 column">
+                <img
+                  src="https://s.yimg.com/ny/api/res/1.2/sf4uSkzBBKBVe.fbL.yi7Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/sports_illustrated_941/87b9c3fa8c2d923da48e03683c7c97c5"
+                  class="imgs-arts"
+                />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="large-6 column">
+                <img
+                  src="https://cdn-s3.si.com/styles/marquee_large_2x/s3/images/World%20Series.jpg?itok=t2oftyjj"
+                  class="imgs-arts"
+                />
+              </div>
+              <div class="large-6 column"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="reveal row callout alert" id="declinar" data-reveal>
       <h5>Atención!!</h5>
       <p>
-        Comentario censurado.
+        Correo enviado!!.
       </p>
       <button
         class="close-button"
@@ -201,10 +272,10 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="reveal row callout alert" id="ignorar" data-reveal>
+    <div class="reveal row callout alert" id="aprobar" data-reveal>
       <h5>Atención!!</h5>
       <p>
-        Comentario ignorado
+        Artìculo aprobado y publicado con éxito.
       </p>
       <button
         class="close-button"
