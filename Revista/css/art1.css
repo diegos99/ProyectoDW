@@ -71,6 +71,21 @@ footer .texto {
 }
 
 .encabezado {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.encabezado img {
+  width: 1400px;
+  height: 500px;
+  filter: brightness(0.6);
+}
+.encabezado h1 {
+  font-weight: 600;
+  color: white;
+}
+
+/* .encabezado {
   margin: auto;
   background: url("https://pmcvariety.files.wordpress.com/2016/03/dodgers-tv-rights.jpg");
   opacity: 0.9;
@@ -79,16 +94,156 @@ footer .texto {
   background-size: cover;
   height: 500px;
   filter: brightness(0.6);
+} */
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-h1 {
+/* h1 {
   line-height: 350px;
   color: white;
-}
-
-img {
+} */
+.anuncio {
   width: 800px;
   height: 350px;
+}
+
+/* Estilo para el el footer del articulo (no de la pagina) */
+.pie {
+  font-weight: 600;
+}
+
+/* Estilo para  el side derecho*/
+.mobile-app-dashboard-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static.guiaongs.org/wp-content/uploads/2017/11/ordenador.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.mobile-app-dashboard-header h1 {
+  color: #fefefe;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.mobile-app-dashboard {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  height: 60vh;
+}
+
+.mobile-app-dashboard a {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  color: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid #8a8a8a;
+}
+
+.mobile-app-dashboard a:nth-child(2n-1) {
+  border-right: 1px solid #8a8a8a;
+}
+
+.mobile-app-dashboard .mobile-app-dashboard-inner {
+  height: 75px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.mobile-app-dashboard .mobile-app-dashboard-inner img,
+.mobile-app-dashboard .mobile-app-dashboard-inner svg,
+.mobile-app-dashboard .mobile-app-dashboard-inner i {
+  max-width: 3.125rem;
+  max-height: 3.125rem;
+  font-size: 3.125rem;
+}
+
+/* Estilo para los comentarios */
+.comment-section-container {
+  background-color: #fefefe;
+  padding: 1rem;
+}
+.comment-section-container h3 {
+  font-weight: 600;
+  color: #e68d10;
+}
+
+.comment-section-author {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.comment-section-author .comment-section-name {
+  margin-left: 1rem;
+}
+.comment-section-author .comment-section-name h5 {
+  font-size: 20px;
+}
+.comment-section-author .comment-section-name p {
+  font-size: 15px;
+}
+
+.comment-section-author .comment-section-name p {
+  margin-bottom: 0;
+}
+
+.comment-section-box {
+  background-color: #e6e6e6;
+  padding: 1rem;
+}
+
+.comment-section-text p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=art1.css.map */
