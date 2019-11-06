@@ -79,6 +79,8 @@ footer .texto {
 
 h1 {
   text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
 
 img {
@@ -165,7 +167,8 @@ img {
   color: #fefefe;
 }
 
-.social.facebook:hover, .social.facebook:focus {
+.social.facebook:hover,
+.social.facebook:focus {
   background-color: #2f477a;
   color: #fefefe;
 }
@@ -175,7 +178,8 @@ img {
   color: #fefefe;
 }
 
-.social.twitter:hover, .social.twitter:focus {
+.social.twitter:hover,
+.social.twitter:focus {
   background-color: #1a8fe8;
   color: #fefefe;
 }
@@ -185,7 +189,8 @@ img {
   color: #fefefe;
 }
 
-.social.linkedin:hover, .social.linkedin:focus {
+.social.linkedin:hover,
+.social.linkedin:focus {
   background-color: #006291;
   color: #fefefe;
 }
@@ -195,7 +200,8 @@ img {
   color: #fefefe;
 }
 
-.social.youtube:hover, .social.youtube:focus {
+.social.youtube:hover,
+.social.youtube:focus {
   background-color: #960000;
   color: #fefefe;
 }
@@ -205,7 +211,8 @@ img {
   color: #fefefe;
 }
 
-.social.instagram:hover, .social.instagram:focus {
+.social.instagram:hover,
+.social.instagram:focus {
   background-color: #0e456d;
   color: #fefefe;
 }
@@ -215,7 +222,8 @@ img {
   color: #fefefe;
 }
 
-.social.pinterest:hover, .social.pinterest:focus {
+.social.pinterest:hover,
+.social.pinterest:focus {
   background-color: #a21a1f;
   color: #fefefe;
 }
@@ -225,7 +233,8 @@ img {
   color: #fefefe;
 }
 
-.social.google-plus:hover, .social.google-plus:focus {
+.social.google-plus:hover,
+.social.google-plus:focus {
   background-color: #be3221;
   color: #fefefe;
 }
@@ -235,7 +244,8 @@ img {
   color: #fefefe;
 }
 
-.social.github:hover, .social.github:focus {
+.social.github:hover,
+.social.github:focus {
   background-color: black;
   color: #fefefe;
 }
@@ -245,7 +255,8 @@ img {
   color: #fefefe;
 }
 
-.social.tumblr:hover, .social.tumblr:focus {
+.social.tumblr:hover,
+.social.tumblr:focus {
   background-color: #284057;
   color: #fefefe;
 }
@@ -253,6 +264,79 @@ img {
 .social > .fa {
   color: #fefefe;
   margin-right: 0.25rem;
+}
+
+/*Estilo para el Call To Action de la revista */
+.product-image-gallery {
+  background-color: #fefefe;
+  padding: 1.5rem;
+}
+
+.pdp-product-image {
+  margin-bottom: 20px;
+}
+
+.product-thumbs a {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 0 !important;
+}
+
+.product-thumbs a img {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border: solid 4px #fefefe;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  line-height: 0;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+/* Estilo para los comentarios */
+.comment-section-container {
+  background-color: #fefefe;
+  padding: 1rem;
+}
+.comment-section-container h3 {
+  font-weight: 600;
+  color: #e68d10;
+}
+
+.comment-section-author {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.comment-section-author .comment-section-name {
+  margin-left: 1rem;
+}
+.comment-section-author .comment-section-name h5 {
+  font-size: 20px;
+}
+.comment-section-author .comment-section-name p {
+  font-size: 15px;
+}
+
+.comment-section-author .comment-section-name p {
+  margin-bottom: 0;
+}
+
+.comment-section-box {
+  background-color: #e6e6e6;
+  padding: 1rem;
+}
+
+.comment-section-text p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=art3.css.map */
