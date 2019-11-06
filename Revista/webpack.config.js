@@ -6,6 +6,17 @@ module.exports = {
         path: __dirname + '/build',
         filename: 'app-o.js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    {loader: 'style-loader'},
+                    {loader: 'css-loader'}
+                ]
+            }
+        ]
+    },
     plugins:[
         new HtmlWebpackPlugin({
             filename: 'index.html',
