@@ -16,6 +16,19 @@ angular.module('revista').factory('AdService', ['$http', '$cookies', '$window',
             });
         }
 
+        factory.getRandom = function (callback) {
+            var req = {
+                method: 'GET',
+                url: 'http://localhost/revista_unis/api/anuncio/random.php',
+                header: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            $http(req).success(function (response) {
+                callback(response);
+            });
+        }
+
         factory.createAnuncio = function (data, callback) {
             var req = {
                 method: 'POST',

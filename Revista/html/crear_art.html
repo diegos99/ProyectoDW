@@ -108,6 +108,9 @@
                 <button ng-click="setArticuloToDelete(articulo);" class="button alert" data-open="del-cat">
                   <i class="fi-trash"></i>
                 </button>
+                <button ng-click="verArticulo(articulo);" class="button">
+                  <i class="fi-eye"></i>
+                </button>
               </td>
             </tr>
           </tbody>
@@ -210,12 +213,27 @@
           </label>
           <label class="large-6 column"
             >Seleccione la imagen de portada
-            <input type="file" name="archivo" value="image/*" />
+              <input
+                ng-model="createLinkPortada"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
           </label>
           <label class="large-6 column"
             >Seleccione 2 imagenes para el artiículo
-            <input type="file" name="archivo" value="image/*" />
-            <input type="file" name="archivo" value="image/*" />
+            <input
+                ng-model="createArticle1Image1"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
+              <input
+                ng-model="createArticle1Image2"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
           </label>
           <p>
             <input
@@ -268,11 +286,21 @@
           </label>
           <label class="large-6 column"
             >Seleccione la imagen de portada
-            <input type="file" name="archivo" value="image/*" />
+            <input
+                ng-model="createLinkPortada"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
           </label>
           <label class="large-6 column"
             >Seleccione 1 imagen para el artiículo
-            <input type="file" name="archivo" value="image/*" />
+            <input
+                ng-model="createArticle2Image1"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
           </label>
           <p>
               <input
@@ -325,14 +353,39 @@
           </label>
           <label class="large-6 column"
             >Seleccione la imagen de portada
-            <input type="file" name="archivo" value="image/*" />
+            <input
+                ng-model="createLinkPortada"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
           </label>
           <label class="large-6 column"
             >Seleccione 4 imágenes para el Carrousel
-            <input type="file" name="archivo" value="image/*" />
-            <input type="file" name="archivo" value="image/*" />
-            <input type="file" name="archivo" value="image/*" />
-            <input type="file" name="archivo" value="image/*" />
+            <input
+                ng-model="createArticle3Image1"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
+              <input
+                ng-model="createArticle3Image2"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
+              <input
+                ng-model="createArticle3Image3"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
+              <input
+                ng-model="createArticle3Image4"
+                type="url"
+                name="direccion"
+                placeholder="https://www.ejemplo.com/"
+              />
           </label>
           <p>
               <input

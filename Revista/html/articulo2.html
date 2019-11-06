@@ -1,99 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Articulo 2</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link
+<link
       rel="stylesheet"
       href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
     />
-    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css" />
-    <link rel="stylesheet" href="../css/art2.css" />
-  </head>
-  <body>
-    <header>
-      <div class="barra">
-        <strong>
-            <i>"La revista número uno en Guatemala"</i>
-        </strong>
-      </div>
+<link rel="stylesheet" href="css/art2.css" />
+<link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
+  
+<div ng-include="'html/topbar.html'"></div>
 
-      <div class="row logo-space">
-        <div class="logo-container">
-          <img src="../imagenes/logo.png" class="logo" />
-        </div>
-      </div>
-
-      <div
-        class="title-bar"
-        data-responsive-toggle="responsive-menu"
-        data-hide-for="medium"
-      >
-        <button
-          class="menu-icon"
-          type="button"
-          data-toggle="responsive-menu"
-        ></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-
-      <nav class="top-bar" id="responsive-menu">
-        <div class="row">
-          <div class="top-bar-left menu-container">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li><a href="../home.html">Inicio</a></li>
-              <li>
-                <a href="#0">Categoria 1</a>
-              </li>
-              <li class="has-submenu">
-                <a href="#0">Categoria2</a>
-                <ul class="submenu menu vertical" data-submenu>
-                  <li><a href="#0">Sub cat 1</a></li>
-                  <li><a href="#0">Sub cat 2</a></li>
-                  <li><a href="#0">Sub cat 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#0">Categoria 3</a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right menu-container">
-            <ul class="menu">
-              <li id="hola">
-                <input type="search" class="menu" placeholder="Search" />
-              </li>
-              <li>
-                <button type="button" class="button">
-                  <i class="fa-money">Search</i>
-                </button>
-              </li>
-              <li><a href="../html/login.html">Log In</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <div class="contenedor">
+    <div class="contenedor" style="width: 100%;">
       <img
-        src="https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/09/14/Recortada/img_cperezg_20170914-120853_imagenes_lv_terceros_tacos-157-kTlG-U4312752428394q-992x558@LaVanguardia-Web.jpg"
+        src="{{articulo.header_image}}"
       />
       <div class="row fecha">
-        <p>Publicado el, 12 de septiembre de 2019</p>
+        <p>Publicado el, {{articulo.fecha_p}}</p>
       </div>
       <div class="titulo row">
-        <h1>"Lorem Ipsum is simply dummy text of the"</h1>
+        <h1>"{{articulo.titulo}}"</h1>
       </div>
       <div class="row detalles">
         <div class="large-6 column autor">
-          <a href="#"><i>Por Diego Vega</i></a>
-        </div>
-        <div class="large-6 column comentarios">
-          <a href="#"
-            ><i class="fi-comments" aria-hidden="true"></i> 3 Comentarios</a
-          >
+          <a href="#"><i>Por {{articulo.nombre_autor}}</i></a>
         </div>
       </div>
     </div>
@@ -109,144 +35,41 @@
               data-sticky-on="small"
             >
               <div class="redes-btn-curvo">
-                <a class="redes-btn facebook" href="#"></a>
-                <a class="redes-btn twitter" href="#"></a>
-                <a class="redes-btn pinterest" href="#"></a>
+                <a class="redes-btn facebook"></a>
+                <a class="redes-btn twitter"></a>
+                <a class="redes-btn pinterest"></a>
               </div>
             </div>
           </div>
           <div class="medium-11 small-8 large-4 columns">
-            <a href="#0">
+            <a>
               <img
-                src="https://prowebimages.blob.core.windows.net/guatemala/0000980_sopa-de-tortilla-gratis-en-los-cebollines_600.jpeg"
+              src="{{ad.link_imagen}}"
+              alt="{{ad.nombre}}"
               />
             </a>
             <br />
             <br />
-
-            <h5><i>Articulos destacados</i></h5>
-            <div class="row articulos">
-              <div class="small-4 medium-2 large-4 column">
-                <img
-                  src="http://www.up.edu.mx/sites/default/files//styles/large/public/concurso_de_asados_argentinos_003.jpg?itok=8BbSrbl0"
-                />
-              </div>
-              <div class="small-8 medium-10 large-8 column">
-                <a href="#">Titulo del articulo destacado</a>
-                <br />
-                <span><i>30/09/2019</i></span>
-                <br />
-                <span class="label">Postres</span>
-              </div>
-              <br />
-              <br />
-
-              <div class="small-4 medium-2 large-4 column">
-                <img
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/0e/c5/b5/dc/restaurante-los-galenos.jpg"
-                />
-              </div>
-              <div class="small-8 medium-10 large-8 column">
-                <a href="#">Titulo del articulo destacado</a>
-                <br />
-                <span><i>19/09/2019</i></span>
-                <br />
-                <span class="label warning">Restaurantes</span>
-              </div>
-              <br />
-              <br />
-
-              <div class="small-4 medium-2 large-4 column">
-                <img
-                  src="https://saulemendez.com/wp-content/uploads/2016/05/sorprende-a-mama-estilo-saul-saul-e-mendez-01.png"
-                />
-              </div>
-              <div class="small-8 medium-10 large-8 column">
-                <a href="#">Titulo del articulo destacado</a>
-                <br />
-                <span><i>19/09/2019</i></span>
-                <br />
-                <span class="label success">Gourmet</span>
-              </div>
-            </div>
+            
           </div>
           <div class="medium-11 small-10 large-7 columns" id="sticky1">
             <div class="contenido">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate accusantium unde culpa est dolorem earum in numquam
-                accusamus, recusandae dolorum. Aperiam nesciunt iste numquam
-                laboriosam, asperiores explicabo impedit laborum, non, itaque
-                quae nemo, assumenda sequi autem pariatur debitis obcaecati
-                culpa mollitia ratione perspiciatis officiis accusamus magni!
-                Inventore ipsam alias non ea dolores veritatis vero sint libero
-                tempore. Alias vero, libero sapiente, maxime facilis magnam,
-                natus modi mollitia at ut numquam consequuntur expedita
-                recusandae incidunt perspiciatis placeat sint doloribus. Ipsam
-                numquam, optio consequuntur commodi possimus! Earum rem rerum,
-                possimus, quae repellat modi omnis quos sapiente magni nesciunt
-                similique atque veniam ipsa.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate accusantium unde culpa est dolorem earum in numquam
-                accusamus, recusandae dolorum. Aperiam nesciunt iste numquam
-                laboriosam, asperiores explicabo impedit laborum, non, itaque
-                quae nemo, assumenda sequi autem pariatur debitis obcaecati
-                culpa mollitia ratione perspiciatis officiis accusamus magni!
-                Inventore ipsam alias non ea dolores veritatis vero sint libero
-                tempore. Alias vero, libero sapiente, maxime facilis magnam,
-                natus modi mollitia at ut numquam consequuntur expedita
-                recusandae incidunt perspiciatis placeat sint doloribus. Ipsam
-                numquam, optio consequuntur commodi possimus! Earum rem rerum,
-                possimus, quae repellat modi omnis quos sapiente magni nesciunt
-                similique atque veniam ipsa.
-              </p>
-              <h4>Subtítulo</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate accusantium unde culpa est dolorem earum in numquam
-                accusamus, recusandae dolorum. Aperiam nesciunt iste numquam
-                laboriosam, asperiores explicabo impedit laborum, non, itaque
-                quae nemo, assumenda sequi autem pariatur debitis obcaecati
-                culpa mollitia ratione perspiciatis officiis accusamus magni!
-                Inventore ipsam alias non ea dolores veritatis vero sint libero
-                tempore. Alias vero, libero sapiente, maxime facilis magnam,
-                natus modi mollitia at ut numquam consequuntur expedita
-                recusandae incidunt perspiciatis placeat sint doloribus. Ipsam
-                numquam, optio consequuntur commodi possimus! Earum rem rerum,
-                possimus, quae repellat modi omnis quos sapiente magni nesciunt
-                similique atque veniam ipsa.
+              <p style="word-break: break-all">
+                {{articulo.text}}
               </p>             
               <img
-                src="https://mmmole.com/wp-content/uploads/2017/09/chiles-en-nogada-01-1030x682.jpg"
+                src="{{images[0].link}}"
               />
-              <br />              
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate accusantium unde culpa est dolorem earum in numquam
-                accusamus, recusandae dolorum. Aperiam nesciunt iste numquam
-                laboriosam, asperiores explicabo impedit laborum, non, itaque
-                quae nemo, assumenda sequi autem pariatur debitis obcaecati
-                culpa mollitia ratione perspiciatis officiis accusamus magni!
-                Inventore ipsam alias non ea dolores veritatis vero sint libero
-                tempore. Alias vero, libero sapiente, maxime facilis magnam,
-                natus modi mollitia at ut numquam consequuntur expedita
-                recusandae incidunt perspiciatis placeat sint doloribus. Ipsam
-                numquam, optio consequuntur commodi possimus! Earum rem rerum,
-                possimus, quae repellat modi omnis quos sapiente magni nesciunt
-                similique atque veniam ipsa.
-              </p>
+              <br />   
             </div>
           </div>
         </div>
         <div class="row medium-10 large-2">
           <div>
             <p>
-              <span><i> Categorías</i></span>
+              <span><i> Categoria</i></span>
               <br />
-              <span class="label">Postres</span>
-              <span class="label warning">México</span>
+              <span class="label">{{articulo.nombre_categoria}}</span>
             </p>
           </div>
         </div>
@@ -260,12 +83,3 @@
         </ul>
       </div>
     </footer>
-
-    <script src="../js/vendor/jquery.js"></script>
-    <script src="../js/vendor/what-input.js"></script>
-    <script src="../js/vendor/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>

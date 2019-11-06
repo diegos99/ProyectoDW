@@ -1,85 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Articulo 1</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link
-      rel="stylesheet"
-      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
-    />
-    <link rel="stylesheet" href="../foundation-icons/foundation-icons.css" />
-    <link rel="stylesheet" href="../css/art1.css" />
-  </head>
-  <body>
-    <header>
-      <div class="barra">
-        <strong>
-            <i>"La revista número uno en Guatemala"</i>
-        </strong>
-      </div>
+<link rel="stylesheet" href="css/art1.css" />
 
-      <div class="row logo-space">
-        <div class="logo-container">
-          <img src="../imagenes/logo.png" class="logo" />
-        </div>
-      </div>
-
-      <div
-        class="title-bar"
-        data-responsive-toggle="responsive-menu"
-        data-hide-for="medium"
-      >
-        <button
-          class="menu-icon"
-          type="button"
-          data-toggle="responsive-menu"
-        ></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-
-      <nav class="top-bar" id="responsive-menu">
-        <div class="row">
-          <div class="top-bar-left menu-container">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li><a href="../home.html">Inicio</a></li>
-              <li>
-                <a href="#0">Categoria 1</a>
-              </li>
-              <li class="has-submenu">
-                <a href="#0">Categoria2</a>
-                <ul class="submenu menu vertical" data-submenu>
-                  <li><a href="#0">Sub cat 1</a></li>
-                  <li><a href="#0">Sub cat 2</a></li>
-                  <li><a href="#0">Sub cat 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#0">Categoria 3</a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right menu-container">
-            <ul class="menu">
-              <li id="hola">
-                <input type="search" class="menu" placeholder="Search" />
-              </li>
-              <li>
-                <button type="button" class="button">
-                  <i class="fa-money">Search</i>
-                </button>
-              </li>
-              <li><a href="../html/login.html">Log In</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<div ng-include="'html/topbar.html'"></div>
 
     <section>
-      <div class="callout large encabezado">
+      <div class="callout large encabezado" style="background-image: url('{{articulo.header_image}}');">
         <div class="row column text-center titulo">
-          <h1>"Titulo del articulo"</h1>
+          <h1>"{{articulo.titulo}}"</h1>
         </div>
       </div>
       <br />
@@ -87,58 +13,23 @@
         <div class="medium-8 large-8 columns">
           <div class="blog-post">
             <p>
-              <span><i class="autor"> Por Diego Vega</i></span>
-              <span class="label">Cocina</span>
+              <span><i class="autor"> {{articulo.nombre_autor}}</i></span>
+              <span class="label">{{articulo.nombre_categoria}}</span>
             </p>
             <img
-              src="https://s.yimg.com/ny/api/res/1.2/sf4uSkzBBKBVe.fbL.yi7Q--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/sports_illustrated_941/87b9c3fa8c2d923da48e03683c7c97c5"
+              src="{{images[0].link}}"
             />
-            <p>
-              <br />
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-              <br />
-              <br />
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-              <br /><br />
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-              <br />
-              <br />
+            <p style="word-break: break-all">
+              {{articulo.text}}
               <img
-                src="https://cdn-s3.si.com/styles/marquee_large_2x/s3/images/World%20Series.jpg?itok=t2oftyjj"
+                src="{{images[1].link}}"
               />
-              <br />
-              <br />
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
             <hr />
             <div class="pie">
               <ul class="menu">
                 <li>
-                  <p>Publicado el <small>27/09/2019</small></p>
+                  <p>Publicado el <small>{{articulo.fecha_p}}</small></p>
                 </li>
                 <li><a href="#">Comentarios: 3</a></li>
               </ul>
@@ -150,10 +41,10 @@
           <div class="stiky row">
             <ul class="menu">
               <li>
-                <a href="#"
+                <a 
                   ><img
-                    src="https://definicion.de/wp-content/uploads/2016/10/Anunciopublicitario.jpg"
-                    alt="cocacola"
+                    src="{{ad.link_imagen}}"
+                    alt="{{ad.nombre}}"
                 /></a>
               </li>
             </ul>
@@ -179,12 +70,3 @@
         </ul>
       </div>
     </footer>
-
-    <script src="../js/vendor/jquery.js"></script>
-    <script src="../js/vendor/what-input.js"></script>
-    <script src="../js/vendor/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>

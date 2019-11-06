@@ -30,6 +30,20 @@ angular.module('revista').factory('ArticleService', ['$http', '$cookies', '$wind
             });
         }
 
+        factory.getArticulo = function (data, callback) {
+            var req = {
+                method: 'GET',
+                url: 'http://localhost/revista_unis/api/articulo/read_one.php?id=' + data.id,
+                header: {
+                    'Content-Type': 'application/json'
+                },
+                data: data
+            };
+            $http(req).success(function (response) {
+                callback(response);
+            });
+        }
+
         factory.createArticulo = function (data, callback) {
             var req = {
                 method: 'POST',
