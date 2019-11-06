@@ -37,6 +37,10 @@ angular.module('revista', ['ngRoute', 'ngCookies'])
                 templateUrl: 'html/subscripcion.html',
                 controller: 'SubscriptionController'
             })
+            .when("/anuncios", {
+                templateUrl: 'html/modulo-anuncios.html',
+                controller: 'AdController'
+            })
             .otherwise("/home");
     }]);
 
