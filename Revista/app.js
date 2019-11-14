@@ -42,7 +42,7 @@ angular.module('revista', ['ngRoute', 'ngCookies'])
                 controller: 'AdController'
             })
             .when("/article1", {
-                templateUrl: 'html/articulo1.html',
+                templateUrl: 'html/articulo1.php',
                 controller: 'Article1Controller'
             })
             .when("/article2", {
@@ -53,7 +53,11 @@ angular.module('revista', ['ngRoute', 'ngCookies'])
                 templateUrl: 'html/articulo3.html',
                 controller: 'Article3Controller'
             })
+            .when("/blob", {
+                templateUrl: 'html/blobs.php',
+                controller: 'BlobController'
+            })                        
             .otherwise("/home");
     }]);
-
+    
 angular.module('revista').constant("serverIp", "localhost");

@@ -56,7 +56,7 @@
           </span>
           <button ng-click="setPlantillaToCreate(3);" class="button success" data-open="crear-t3">
             <i class="fi-plus"> Crear articulo</i>
-          </button>
+          </button>         
         </div>
       </div>
     </section>
@@ -80,7 +80,8 @@
               <th>Plantilla</th>
               <th>Categoria</th>
               <th>SubCategoria</th>
-              <th>Acciones</th>
+              <th>Texto</th>
+              <th>Acciones</th>              
             </tr>
           </thead>
           <tbody>
@@ -97,10 +98,13 @@
               </td>
               <td>
                 {{articulo.nombre_categoria}}
-              </td>
+              </td>              
               <td>
                 {{articulo.nombre_sub_categoria}}
-              </td>
+              </td>  
+              <td>
+                {{articulo.text}}
+              </td>            
               <td>
                 <button ng-click="updating(articulo);setCategoryToUpdate();" class="button warning" data-open="editar-cat">
                   <i class="fi-pencil"></i>

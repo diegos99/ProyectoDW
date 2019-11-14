@@ -1,125 +1,168 @@
 <link rel="stylesheet" href="css/Usuario.css" />
 <div ng-include="'html/topbar.html'"></div>
-    
-    <section>
-        <div class="row large-6 profile">
-            <div class="contenido">
-              <div class="profile-usertitle">
-                <h4>Información personal</h4>
-                <br />
-                <div class="profile-userpic">
-                  <label for="exampleFileUpload" class="button boton-foto-perfil">
-                    <img
-                      src="imagenes/perfil.jpg"
-                      src="name=archivo"
-                      alt="foto de perfil"
-                    />
-                  </label>
-                  <input type="file" id="exampleFileUpload" class="show-for-sr" />
-                  <!-- <form action="action" method="post" enctype="multipart/form-data">
+
+<section>
+  <div class="row large-6 profile">
+    <div class="contenido">
+      <div class="profile-usertitle">
+        <h4>Información personal</h4>
+        <br />
+        <div class="profile-userpic">
+          <label for="exampleFileUpload" class="button boton-foto-perfil">
+            <img
+              src="imagenes/perfil.jpg"
+              src="name=archivo"
+              alt="foto de perfil"
+            />
+          </label>
+          <input type="file" id="exampleFileUpload" class="show-for-sr" />
+          <!-- <form action="action" method="post" enctype="multipart/form-data">
                     <input type="file" name="archivo" /><br />
                     <input type="submit" value="Subir" name="subir" />
                     </form> -->
-                </div>
-                <div class="profile-usertitle-name">
-                  {{user.nombre}} {{user.apellido}}
-                </div>
-                <p>Email: <i>{{user.correo}}</i></p>
-              </div>
-              <br />
-              <div class="profile-userbuttons">
-                <a href="#articulos"
-                  ><button class="button">Crear articulo</button></a
-                >
-                <a href="#categorias"
-                  ><button class="button">Administrar categorias</button>
-                </a>
-                <br />
-                <a href="#subcategorias"
-                  ><button class="button">Administrar subcategorias</button>
-                </a>
-                <br />
-                <button class="button" data-open="update-pass" ng-click="setUpdatePassword(usuario);">
-                    Cambiar mi contraseña
-                </button>
-
-                <button class="button" data-open="update-info">
-                    Actualizar mi informacion
-                </button>
-                <button ng-click="logOut();" class="button alert">Cerrar sesion</button>
-              </div>
-            </div>
-          </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <footer>
-      <div class="row">
-        <ul class="menu align-left">
-          <li class="menu-text">Copyright ©, Todos los derechos reservados.</li>
-        </ul>
+        </div>
+        <div class="profile-usertitle-name">
+          {{ user.nombre }} {{ user.apellido }}
+        </div>
+        <p>
+          Email: <i>{{ user.correo }}</i>
+        </p>
       </div>
-    </footer>
+      <br />
+      <div class="profile-userbuttons">
+        <a href="../Revista/html/blobs.php"><button class="button">Blobs</button></a>
+        <a href="../Revista/html/FilterQuery.php"><button class="button">Búsqueda filtrada</button></a>
+        <a href="../Revista/html/subQuery.php"><button class="button">Query dinámico</button></a>
+        <a href="#articulos"><button class="button">Crear articulo</button></a>
+        <a href="#categorias"
+          ><button class="button">Administrar categorias</button>
+        </a>
+        <br />
+        <a href="#subcategorias"
+          ><button class="button">Administrar subcategorias</button>
+        </a>
+        <br />
+        <button
+          class="button"
+          data-open="update-pass"
+          ng-click="setUpdatePassword(usuario);"
+        >
+          Cambiar mi contraseña
+        </button>
 
-    <div class="reveal" id="update-pass" data-reveal>      
-        <div class="row">
-            <div class="large-12 columns">    
-                <h4 class="text-center">Actualizar la contraseña del usuario</h4>
-                <hr>
-                <p>
-                  Ingrese la nueva contraseña para el usuario
-                </p>      
-                      <div class="large-12 columns">
-                          <form>     
-                            <label>Nueva contraseña del usuario
-                              <input ng-model="passwordToUpdate" type="password" placeholder="Contraseña">
-                              </label>             
-                              <p>
-                                  <button data-close ng-click="updateUserPassword();" class="button expanded success">Actualizar</button>
-                              </p>                                
-                              </form> 
-                          <br />                                         
-                      </div>    
-              </div>
-        </div>    
+        <button class="button" data-open="update-info">
+          Actualizar mi informacion
+        </button>
+        <button ng-click="logOut();" class="button alert">Cerrar sesion</button>
+      </div>
     </div>
+  </div>
+</section>
+<br />
+<br />
+<br />
+<footer>
+  <div class="row">
+    <ul class="menu align-left">
+      <li class="menu-text">Copyright ©, Todos los derechos reservados.</li>
+    </ul>
+  </div>
+</footer>
 
-    <div class="reveal row" id="update-info" data-reveal role="dialog">    
-        <div class="large-12 columns">
-            <h4 class="text-center">Edita tu informacion</h4>
-            <hr>
-            <p>
-              Llene los siguientes campos para editar tu informacion
-            </p>      
-            <div class="large-12 columns">
-                <form>        
-                  <label>Nombre del usuario
-                      <input ng-model="userToUpdate.nombre" type="text" placeholder="Nombre">
-                  </label>
-                  <label>Apellido del usuario
-                    <input ng-model="userToUpdate.apellido" type="text" placeholder="Apellido">
-                </label>
-                <label>Telefono del usuario
-                    <input ng-model="userToUpdate.telefono" type="text" placeholder="Telefono">
-                </label>
-                <label>Correo del usuario
-                    <input ng-model="userToUpdate.correo" type="text" placeholder="Correo">
-                </label>             
-                  <p>
-                      <button data-close ng-click="updateUser();" class="button expanded success">Actualizar</button>
-                  </p>                                
-                  </form> 
-                  <br />                                         
-              </div>   
+<div class="reveal" id="update-pass" data-reveal>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="text-center">Actualizar la contraseña del usuario</h4>
+      <hr />
+      <p>
+        Ingrese la nueva contraseña para el usuario
+      </p>
+      <div class="large-12 columns">
+        <form>
+          <label
+            >Nueva contraseña del usuario
+            <input
+              ng-model="passwordToUpdate"
+              type="password"
+              placeholder="Contraseña"
+            />
+          </label>
+          <p>
             <button
-              class="close-button"
               data-close
-              aria-label="Close modal"
-              type="button"
+              ng-click="updateUserPassword();"
+              class="button expanded success"
             >
-              <span aria-hidden="true">&times;</span>
-            </button>      
-        </div>       
-        
+              Actualizar
+            </button>
+          </p>
+        </form>
+        <br />
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="reveal row" id="update-info" data-reveal role="dialog">
+  <div class="large-12 columns">
+    <h4 class="text-center">Edita tu informacion</h4>
+    <hr />
+    <p>
+      Llene los siguientes campos para editar tu informacion
+    </p>
+    <div class="large-12 columns">
+      <form>
+        <label
+          >Nombre del usuario
+          <input
+            ng-model="userToUpdate.nombre"
+            type="text"
+            placeholder="Nombre"
+          />
+        </label>
+        <label
+          >Apellido del usuario
+          <input
+            ng-model="userToUpdate.apellido"
+            type="text"
+            placeholder="Apellido"
+          />
+        </label>
+        <label
+          >Telefono del usuario
+          <input
+            ng-model="userToUpdate.telefono"
+            type="text"
+            placeholder="Telefono"
+          />
+        </label>
+        <label
+          >Correo del usuario
+          <input
+            ng-model="userToUpdate.correo"
+            type="text"
+            placeholder="Correo"
+          />
+        </label>
+        <p>
+          <button
+            data-close
+            ng-click="updateUser();"
+            class="button expanded success"
+          >
+            Actualizar
+          </button>
+        </p>
+      </form>
+      <br />
+    </div>
+    <button
+      class="close-button"
+      data-close
+      aria-label="Close modal"
+      type="button"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
